@@ -1,0 +1,6 @@
+This is a low contrast light colour theme derived from [[http://github.com/bbatsov/zenburn-emacs][Zenburn]] but
+with inverted colours.  It is tested to work only on GNU Emacs 24, but
+may work with version 23 too.
+
+To use it, use the built-in defpackage machinery like load-theme and
+the like.
