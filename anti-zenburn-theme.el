@@ -599,6 +599,12 @@
 		   ,azenburn-violet ,azenburn-dark-blue ,azenburn-brown
 		   ,azenburn-green ,azenburn-bordeaux ,azenburn-fg))))
 
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+	       (file-name-as-directory
+		(file-name-directory load-file-name))))
+
 (provide-theme 'anti-zenburn)
 
 ;;; anti-zenburn-theme.el ends here
