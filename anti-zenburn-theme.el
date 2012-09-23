@@ -2,6 +2,7 @@
 
 ;;; Commentary:
 ;; Author: Andrey Kotlarski <m00naticus@gmail.com>
+;; URL: https://github.com/m00natic/anti-zenburn
 ;; Version: 1.6
 
 ;; This program is free software; you can redistribute it and/or modify

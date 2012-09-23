@@ -1,4 +1,4 @@
-This is a low contrast light colour theme derived from [[http://github.com/bbatsov/zenburn-emacs][Zenburn]] but
+This is a low contrast grayish colour theme derived from [[http://github.com/bbatsov/zenburn-emacs][Zenburn]] but
 with inverted colours.  It is tested to work only on GNU Emacs 24, but
 may work with version 23 too.
 
