@@ -4,3 +4,5 @@ may work with version 23 too.
 
 To use it, use the built-in defpackage machinery like load-theme and
 the like.
+
+[[https://github.com/downloads/m00natic/anti-zenburn/anti-zenburn1.png]]
