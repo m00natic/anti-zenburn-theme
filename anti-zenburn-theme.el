@@ -318,10 +318,10 @@
    `(helm-candidate-number ((t (:foreground ,azenburn-violet+4 :background ,azenburn-bg-1))))
 
    ;; hl-line-mode
-   `(hl-line-face ((,class (:background ,azenburn-bg-1))
-                   (t :underline t)))
-   `(hl-line ((,class (:background ,azenburn-bg-1)) ; old emacsen
-              (t :underline t)))
+   `(hl-line-face ((,class (:background ,azenburn-bg-05))
+                   (t :weight bold)))
+   `(hl-line ((,class (:background ,azenburn-bg-05)) ; old emacsen
+              (t :weight bold)))
 
    ;; hl-sexp
    `(hl-sexp-face ((,class (:background ,azenburn-bg+1))
