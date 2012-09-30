@@ -75,8 +75,8 @@
    `(escape-glyph-face ((t (:foreground ,azenburn-blue))))
    `(fringe ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(header-line ((t (:foreground ,azenburn-dark-blue
-                                  :background ,azenburn-bg-1
-                                  :box (:line-width -1 :style released-button)))))
+				  :background ,azenburn-bg-1
+				  :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:background ,azenburn-bg-05))))
 
    ;;; compilation
@@ -108,16 +108,16 @@
    `(minibuffer-prompt ((t (:foreground ,azenburn-dark-blue))))
    `(mode-line
      ((,class (:foreground ,azenburn-violet+1
-                           :background ,azenburn-bg-1
-                           :box (:line-width -1 :style released-button)))
+			   :background ,azenburn-bg-1
+			   :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,azenburn-violet-1
-                      :background ,azenburn-bg-05
-                      :box (:line-width -1 :style released-button)))))
+		      :background ,azenburn-bg-05
+		      :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,azenburn-bg-1))
-             (t :inverse-video t)))
+	     (t :inverse-video t)))
    `(secondary-selection ((t (:background ,azenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,azenburn-blue))))
    `(vertical-border ((t (:foreground ,azenburn-fg))))
@@ -183,11 +183,11 @@
 
    ;; diff
    `(diff-added ((,class (:foreground ,azenburn-violet+4))
-                 (t (:foreground ,azenburn-violet+1))))
+		 (t (:foreground ,azenburn-violet+1))))
    `(diff-changed ((t (:foreground ,azenburn-dark-blue))))
    `(diff-removed ((t (:foreground ,azenburn-blue))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
-                  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
+		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
      ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :bold t))
       (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
@@ -303,15 +303,15 @@
    ;; helm
    `(helm-header
      ((t (:foreground ,azenburn-violet
-                      :background ,azenburn-bg
-                      :underline nil
-                      :box nil))))
+		      :background ,azenburn-bg
+		      :underline nil
+		      :box nil))))
    `(helm-source-header
      ((t (:foreground ,azenburn-dark-blue
-                      :background ,azenburn-bg-1
-                      :underline nil
-                      :weight bold
-                      :box (:line-width -1 :style released-button)))))
+		      :background ,azenburn-bg-1
+		      :underline nil
+		      :weight bold
+		      :box (:line-width -1 :style released-button)))))
    `(helm-selection ((t (:background ,azenburn-bg+1 :underline nil))))
    `(helm-selection-line ((t (:background ,azenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,azenburn-bg :background ,azenburn-dark-blue-2))))
@@ -319,13 +319,13 @@
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,azenburn-bg-05))
-                   (t :weight bold)))
+		   (t :weight bold)))
    `(hl-line ((,class (:background ,azenburn-bg-05)) ; old emacsen
-              (t :weight bold)))
+	      (t :weight bold)))
 
    ;; hl-sexp
    `(hl-sexp-face ((,class (:background ,azenburn-bg+1))
-                   (t :weight bold)))
+		   (t :weight bold)))
 
    ;; ido-mode
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -430,7 +430,7 @@
      ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,azenburn-fg :weight bold))))
    `(org-checkbox ((t (:background ,azenburn-bg+2 :foreground "black"
-                                   :box (:line-width 1 :style released-button)))))
+				   :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,azenburn-beige :underline t))))
    `(org-deadline-announce ((t (:foreground ,azenburn-blue-1))))
    `(org-done ((t (:bold t :weight bold :foreground ,azenburn-violet+3))))
@@ -514,30 +514,30 @@
 
    ;; tabbar
    `(tabbar-button ((t (:foreground ,azenburn-fg
-                                    :background ,azenburn-bg))))
+				    :background ,azenburn-bg))))
    `(tabbar-selected ((t (:foreground ,azenburn-fg
-                                      :background ,azenburn-bg
-                                      :box (:line-width -1 :style pressed-button)))))
+				      :background ,azenburn-bg
+				      :box (:line-width -1 :style pressed-button)))))
    `(tabbar-unselected ((t (:foreground ,azenburn-fg
-                                        :background ,azenburn-bg+1
-                                        :box (:line-width -1 :style released-button)))))
+					:background ,azenburn-bg+1
+					:box (:line-width -1 :style released-button)))))
 
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,azenburn-bg+1))))
 
    ;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,azenburn-dark-blue :underline t
-                                 :weight bold))))
+				 :weight bold))))
    `(w3m-arrived-anchor ((t (:foreground ,azenburn-dark-blue-2
-                                         :underline t :weight normal))))
+					 :underline t :weight normal))))
    `(w3m-form ((t (:foreground ,azenburn-blue-1 :underline t))))
    `(w3m-header-line-location-title ((t (:foreground ,azenburn-dark-blue
-                                                     :underline t :weight bold))))
+						     :underline t :weight bold))))
    '(w3m-history-current-url ((t (:inherit match))))
    `(w3m-lnum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
    `(w3m-lnum-match ((t (:background ,azenburn-bg-1
-                                     :foreground ,azenburn-light-blue
-                                     :weight bold))))
+				     :foreground ,azenburn-light-blue
+				     :weight bold))))
    `(w3m-lnum-minibuffer-prompt ((t (:foreground ,azenburn-dark-blue))))
 
    ;; whitespace-mode
@@ -573,7 +573,7 @@
    `(wl-highlight-message-unimportant-header-contents ((t (:foreground ,azenburn-fg))))
    `(wl-highlight-summary-answered-face ((t (:foreground ,azenburn-beige))))
    `(wl-highlight-summary-disposed-face ((t (:foreground ,azenburn-fg
-                                                         :slant italic))))
+							 :slant italic))))
    `(wl-highlight-summary-new-face ((t (:foreground ,azenburn-beige))))
    `(wl-highlight-summary-normal-face ((t (:foreground ,azenburn-fg))))
    `(wl-highlight-summary-thread-top-face ((t (:foreground ,azenburn-dark-blue))))
@@ -593,9 +593,9 @@
   (custom-theme-set-variables
    'anti-zenburn
    `(ansi-color-names-vector [,azenburn-bg ,azenburn-blue ,azenburn-violet
-                                           ,azenburn-dark-blue ,azenburn-beige
-                                           ,azenburn-green ,azenburn-bordeaux
-                                           ,azenburn-fg])
+					   ,azenburn-dark-blue ,azenburn-beige
+					   ,azenburn-green ,azenburn-bordeaux
+					   ,azenburn-fg])
 
    ;; fill-column-indicator
    `(fci-rule-color ,azenburn-bg-05))
@@ -603,16 +603,16 @@
   ;;; colors for the ansi-term
   (eval-after-load 'term
     `(setq ansi-term-color-vector
-           (vector 'unspecified ,azenburn-bg ,azenburn-blue
-                   ,azenburn-violet ,azenburn-dark-blue ,azenburn-beige
-                   ,azenburn-green ,azenburn-bordeaux ,azenburn-fg))))
+	   (vector 'unspecified ,azenburn-bg ,azenburn-blue
+		   ,azenburn-violet ,azenburn-dark-blue ,azenburn-beige
+		   ,azenburn-green ,azenburn-bordeaux ,azenburn-fg))))
 
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
      (add-to-list 'custom-theme-load-path
-                  (file-name-as-directory
-                   (file-name-directory load-file-name))))
+		  (file-name-as-directory
+		   (file-name-directory load-file-name))))
 
 (provide-theme 'anti-zenburn)
 
