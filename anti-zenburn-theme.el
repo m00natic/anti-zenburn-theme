@@ -1,6 +1,5 @@
 ;;; anti-zenburn-theme.el --- Low-contrast Zenburn-inverted theme
 
-;;; Commentary:
 ;; Author: Andrey Kotlarski <m00naticus@gmail.com>
 ;; URL: https://github.com/m00natic/anti-zenburn
 ;; Version: 1.7
@@ -18,10 +17,10 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-;;; Credits:
+;;; Commentary:
 
 ;; Derived from Bozhidar Batsov's port of the Zenburn theme
-;; located here http://github.com/bbatsov/zenburn-emacs
+;; located here https://github.com/bbatsov/zenburn-emacs
 
 ;;; Code:
 
