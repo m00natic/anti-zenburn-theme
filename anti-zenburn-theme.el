@@ -164,7 +164,7 @@
    `(ack-separator ((t (:foreground ,azenburn-fg))))
    `(ack-file ((t (:foreground ,azenburn-beige))))
    `(ack-line ((t (:foreground ,azenburn-dark-blue))))
-   `(ack-match ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg-1 :weigth bold))))
+   `(ack-match ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg-1 :weight bold))))
 
    ;; auctex
    `(font-latex-bold ((t (:inherit bold))))
@@ -229,7 +229,7 @@
    `(erc-input-face ((t (:foreground ,azenburn-dark-blue))))
    `(erc-keyword-face ((t (:foreground ,azenburn-beige :weight bold))))
    `(erc-nick-default-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
-   `(erc-my-nick-face ((t (:foreground ,azenburn-blue :weigth bold))))
+   `(erc-my-nick-face ((t (:foreground ,azenburn-blue :weight bold))))
    `(erc-nick-msg-face ((t (:inherit erc-default))))
    `(erc-notice-face ((t (:foreground ,azenburn-violet))))
    `(erc-pal-face ((t (:foreground ,azenburn-light-blue :weight bold))))
