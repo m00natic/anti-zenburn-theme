@@ -540,15 +540,15 @@
    `(w3m-lnum-minibuffer-prompt ((t (:foreground ,azenburn-dark-blue))))
 
    ;; whitespace-mode
-   `(whitespace-space ((t (:background ,azenburn-bg :foreground ,azenburn-bg+1))))
-   `(whitespace-hspace ((t (:background ,azenburn-bg :foreground ,azenburn-bg+1))))
-   `(whitespace-tab ((t (:background ,azenburn-bg :foreground ,azenburn-blue))))
+   `(whitespace-space ((t (:background ,azenburn-bg+1 :foreground ,azenburn-bg+1))))
+   `(whitespace-hspace ((t (:background ,azenburn-bg+1 :foreground ,azenburn-bg+1))))
+   `(whitespace-tab ((t (:background ,azenburn-blue-1))))
    `(whitespace-newline ((t (:foreground ,azenburn-bg+1))))
-   `(whitespace-trailing ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
-   `(whitespace-line ((t (:background ,azenburn-bg-05 :foreground ,azenburn-green))))
+   `(whitespace-trailing ((t (:background ,azenburn-blue))))
+   `(whitespace-line ((t (:background ,azenburn-bg :foreground ,azenburn-green))))
    `(whitespace-space-before-tab ((t (:background ,azenburn-light-blue :foreground ,azenburn-light-blue))))
    `(whitespace-indentation ((t (:background ,azenburn-dark-blue :foreground ,azenburn-blue))))
-   `(whitespace-empty ((t (:background ,azenburn-dark-blue :foreground ,azenburn-blue))))
+   `(whitespace-empty ((t (:background ,azenburn-dark-blue))))
    `(whitespace-space-after-tab ((t (:background ,azenburn-dark-blue :foreground ,azenburn-blue))))
 
    ;; wanderlust
