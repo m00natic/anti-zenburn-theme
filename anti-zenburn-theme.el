@@ -180,6 +180,11 @@
    `(popup-scroll-bar-background-face ((t (:background ,azenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,azenburn-bg :foreground ,azenburn-fg))))
 
+   ;; clojure-test-mode
+   `(clojure-test-failure-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(clojure-test-error-face ((t (:foreground ,azenburn-blue :weight bold :underline t))))
+   `(clojure-test-success-face ((t (:foreground ,azenburn-violet+1 :weight bold :underline t))))
+
    ;; diff
    `(diff-added ((,class (:foreground ,azenburn-violet+4))
 		 (t (:foreground ,azenburn-violet+1))))
@@ -208,13 +213,13 @@
    `(eshell-ls-special ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
+   ;; flycheck
+   `(flycheck-error-face ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
+   `(flycheck-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+
    ;; flymake
    `(flymake-errline ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(flymake-warnline ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
-
-   ;; flycheck
-   `(flycheck-error-face ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
-   `(flymake-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
 
    ;; flyspell
    `(flyspell-duplicate ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
