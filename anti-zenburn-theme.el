@@ -604,16 +604,13 @@
 					   ,azenburn-dark-blue ,azenburn-beige
 					   ,azenburn-green ,azenburn-bordeaux
 					   ,azenburn-fg])
+   `(ansi-term-color-vector [,azenburn-bg ,azenburn-blue ,azenburn-violet
+                                          ,azenburn-dark-blue ,azenburn-beige
+                                          ,azenburn-green ,azenburn-bordeaux
+                                          ,azenburn-fg])
 
    ;; fill-column-indicator
-   `(fci-rule-color ,azenburn-bg-05))
-
-  ;;; colors for the ansi-term
-  (eval-after-load 'term
-    `(setq ansi-term-color-vector
-	   (vector 'unspecified ,azenburn-bg ,azenburn-blue
-		   ,azenburn-violet ,azenburn-dark-blue ,azenburn-beige
-		   ,azenburn-green ,azenburn-bordeaux ,azenburn-fg))))
+   `(fci-rule-color ,azenburn-bg-05)))
 
 ;;;###autoload
 (and load-file-name
