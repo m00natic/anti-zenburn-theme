@@ -424,6 +424,17 @@
    `(nav-face-file ((t (:foreground ,azenburn-fg))))
    `(nav-face-hfile ((t (:foreground ,azenburn-blue-4))))
 
+   ;; mu4e
+   `(mu4e-cited-1-face ((t (:foreground ,azenburn-beige    :slant italic))))
+   `(mu4e-cited-2-face ((t (:foreground ,azenburn-violet+2 :slant italic))))
+   `(mu4e-cited-3-face ((t (:foreground ,azenburn-beige-2  :slant italic))))
+   `(mu4e-cited-4-face ((t (:foreground ,azenburn-violet   :slant italic))))
+   `(mu4e-cited-5-face ((t (:foreground ,azenburn-beige-4  :slant italic))))
+   `(mu4e-cited-6-face ((t (:foreground ,azenburn-violet-1 :slant italic))))
+   `(mu4e-cited-7-face ((t (:foreground ,azenburn-beige    :slant italic))))
+   `(mu4e-replied-face ((t (:foreground ,azenburn-bg+3))))
+   `(mu4e-trashed-face ((t (:foreground ,azenburn-bg+3 :strike-through t))))
+
    ;; mumamo
    `(mumamo-background-chunk-major ((t (:background nil))))
    `(mumamo-background-chunk-submode1 ((t (:background ,azenburn-bg-1))))
