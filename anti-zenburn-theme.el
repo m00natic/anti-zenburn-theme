@@ -135,7 +135,7 @@
    `(font-lock-string-face ((t (:foreground ,azenburn-blue))))
    `(font-lock-type-face ((t (:foreground ,azenburn-beige-1))))
    `(font-lock-variable-name-face ((t (:foreground ,azenburn-light-blue))))
-   `(font-lock-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(font-lock-warning-face ((t (:foreground ,azenburn-dark-blue-2 :weight bold))))
 
    `(c-annotation-face ((t (:inherit font-lock-constant-face))))
 
