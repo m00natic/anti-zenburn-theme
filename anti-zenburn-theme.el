@@ -502,6 +502,22 @@
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,azenburn-violet))))
    `( rainbow-delimiters-depth-12-face ((t (:foreground ,azenburn-beige-5))))
 
+   ;;rcirc
+   `(rcirc-my-nick ((t (:foreground ,azenburn-beige))))
+   `(rcirc-other-nick ((t (:foreground ,azenburn-light-blue))))
+   `(rcirc-bright-nick ((t (:foreground ,azenburn-beige+1))))
+   `(rcirc-dim-nick ((t (:foreground ,azenburn-beige-2))))
+   `(rcirc-server ((t (:foreground ,azenburn-violet))))
+   `(rcirc-server-prefix ((t (:foreground ,azenburn-violet+1))))
+   `(rcirc-timestamp ((t (:foreground ,azenburn-violet+2))))
+   `(rcirc-nick-in-message ((t (:foreground ,azenburn-dark-blue))))
+   `(rcirc-nick-in-message-full-line ((t (:bold t))))
+   `(rcirc-prompt ((t (:foreground ,azenburn-dark-blue :bold t))))
+   `(rcirc-track-nick ((t (:inverse-video t))))
+   `(rcirc-track-keyword ((t (:bold t))))
+   `(rcirc-url ((t (:bold t))))
+   `(rcirc-keyword ((t (:foreground ,azenburn-dark-blue :bold t))))
+
    ;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,azenburn-violet))))
    `(rpm-spec-doc-face ((t (:foreground ,azenburn-violet))))
