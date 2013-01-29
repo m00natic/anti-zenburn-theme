@@ -71,7 +71,7 @@
    ;;; basic coloring
    `(default ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
    `(cursor ((t (:foreground ,azenburn-fg :background "black"))))
-   `(escape-glyph-face ((t (:foreground ,azenburn-blue))))
+   `(escape-glyph ((t (:foreground ,azenburn-dark-blue :bold t))))
    `(fringe ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(header-line ((t (:foreground ,azenburn-dark-blue
 				  :background ,azenburn-bg-1
