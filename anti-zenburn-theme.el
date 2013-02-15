@@ -1,7 +1,7 @@
 ;;; anti-zenburn-theme.el --- Low-contrast Zenburn-inverted theme
 
 ;; Author: Andrey Kotlarski <m00naticus@gmail.com>
-;; URL: https://github.com/m00natic/anti-zenburn
+;; URL: https://github.com/m00natic/anti-zenburn-theme
 ;; Version: 1.7
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -245,6 +245,11 @@
    `(erc-prompt-face ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,azenburn-violet+1))))
    `(erc-underline-face ((t (:underline t))))
+
+   ;; git-gutter
+   `(git-gutter:added ((,class (:foreground ,azenburn-violet :weight bold :inverse-video t))))
+   `(git-gutter:deleted ((,class (:foreground ,azenburn-blue :weight bold :inverse-video t))))
+   `(git-gutter:modified ((,class (:foreground ,azenburn-green :weight bold :inverse-video t))))
 
    ;; gnus
    `(gnus-group-mail-1 ((t (:bold t :inherit gnus-group-mail-1-empty))))
