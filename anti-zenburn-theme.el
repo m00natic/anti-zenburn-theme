@@ -484,14 +484,14 @@
    `(org-column-title ((t (:background ,azenburn-bg-1 :underline t :weight bold))))
 
    ;; outline
-   `(outline-8 ((t (:inherit default))))
-   `(outline-7 ((t (:inherit outline-8 :height 1.0))))
-   `(outline-6 ((t (:inherit outline-7 :height 1.0))))
-   `(outline-5 ((t (:inherit outline-6 :height 1.0))))
-   `(outline-4 ((t (:inherit outline-5 :height 1.0))))
-   `(outline-3 ((t (:inherit outline-4 :height 1.0))))
-   `(outline-2 ((t (:inherit outline-3 :height 1.0))))
-   `(outline-1 ((t (:inherit outline-2 :height 1.0))))
+   `(outline-1 ((t (:foreground ,azenburn-light-blue))))
+   `(outline-2 ((t (:foreground ,azenburn-violet+4))))
+   `(outline-3 ((t (:foreground ,azenburn-beige-1))))
+   `(outline-4 ((t (:foreground ,azenburn-dark-blue-2))))
+   `(outline-5 ((t (:foreground ,azenburn-bordeaux))))
+   `(outline-6 ((t (:foreground ,azenburn-violet+2))))
+   `(outline-7 ((t (:foreground ,azenburn-blue-4))))
+   `(outline-8 ((t (:foreground ,azenburn-beige-4))))
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,azenburn-fg))))
