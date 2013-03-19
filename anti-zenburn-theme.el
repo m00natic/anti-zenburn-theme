@@ -562,6 +562,26 @@
 					:background ,azenburn-bg+1
 					:box (:line-width -1 :style released-button)))))
 
+   ;; term
+   `(term-color-black ((t (:foreground ,azenburn-bg
+                                       :background ,azenburn-bg-1))))
+   `(term-color-red ((t (:foreground ,azenburn-blue-2
+                                       :background ,azenburn-blue-4))))
+   `(term-color-green ((t (:foreground ,azenburn-violet
+                                       :background ,azenburn-violet+2))))
+   `(term-color-yellow ((t (:foreground ,azenburn-light-blue
+                                       :background ,azenburn-dark-blue))))
+   `(term-color-blue ((t (:foreground ,azenburn-beige-1
+                                      :background ,azenburn-beige-4))))
+   `(term-color-magenta ((t (:foreground ,azenburn-green
+                                         :background ,azenburn-blue))))
+   `(term-color-cyan ((t (:foreground ,azenburn-bordeaux
+                                       :background ,azenburn-beige))))
+   `(term-color-white ((t (:foreground ,azenburn-fg
+                                       :background ,azenburn-fg-1))))
+   '(term-default-fg-color ((t (:inherit term-color-white))))
+   '(term-default-bg-color ((t (:inherit term-color-black))))
+
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,azenburn-bg+1))))
 
@@ -636,10 +656,6 @@
 					   ,azenburn-dark-blue ,azenburn-beige
 					   ,azenburn-green ,azenburn-bordeaux
 					   ,azenburn-fg])
-   `(ansi-term-color-vector [,azenburn-bg ,azenburn-blue ,azenburn-violet
-                                          ,azenburn-dark-blue ,azenburn-beige
-                                          ,azenburn-green ,azenburn-bordeaux
-                                          ,azenburn-fg])
 
    ;; fill-column-indicator
    `(fci-rule-color ,azenburn-bg-05)))
