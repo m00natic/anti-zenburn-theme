@@ -77,6 +77,8 @@
 				  :background ,azenburn-bg-1
 				  :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:background ,azenburn-bg-05))))
+   `(success ((t (:foreground ,azenburn-violet :weight bold))))
+   `(warning ((t (:foreground ,azenburn-light-blue :weight bold))))
 
    ;;; compilation
    `(compilation-column-face ((t (:foreground ,azenburn-dark-blue))))
@@ -90,6 +92,9 @@
    `(compilation-line-number ((t (:foreground ,azenburn-dark-blue))))
    `(compilation-message-face ((t (:foreground ,azenburn-beige))))
    `(compilation-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(compilation-mode-line-exit ((t (:foreground ,azenburn-violet :weight bold))))
+   `(compilation-mode-line-fail ((t (:foreground ,azenburn-blue :weight bold))))
+   `(compilation-mode-line-run ((t (:foreground ,azenburn-light-blue :weight bold))))
 
    ;;; grep
    `(grep-context-face ((t (:foreground ,azenburn-fg))))
@@ -186,10 +191,14 @@
    `(clojure-test-success-face ((t (:foreground ,azenburn-violet+1 :weight bold :underline t))))
 
    ;; diff
-   `(diff-added ((,class (:foreground ,azenburn-violet+4))
-		 (t (:foreground ,azenburn-violet+1))))
+   `(diff-added ((,class (:foreground ,azenburn-violet+4 :background nil))
+		 (t (:foreground ,azenburn-violet+1 :background nil))))
    `(diff-changed ((t (:foreground ,azenburn-dark-blue))))
-   `(diff-removed ((t (:foreground ,azenburn-blue))))
+   `(diff-removed ((,class (:foreground ,azenburn-blue :background nil))
+                   (t (:foreground ,azenburn-blue-3 :background nil))))
+   `(diff-refine-added ((t :inherit diff-added :weight bold)))
+   `(diff-refine-change ((t :inherit diff-changed :weight bold)))
+   `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
    `(diff-header ((,class (:background ,azenburn-bg+2))
 		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
