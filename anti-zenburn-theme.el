@@ -278,9 +278,9 @@
    `(erc-underline-face ((t (:underline t))))
 
    ;; git-gutter
-   `(git-gutter:added ((,class (:foreground ,azenburn-violet :weight bold :inverse-video t))))
-   `(git-gutter:deleted ((,class (:foreground ,azenburn-blue :weight bold :inverse-video t))))
-   `(git-gutter:modified ((,class (:foreground ,azenburn-green :weight bold :inverse-video t))))
+   `(git-gutter:added ((t (:foreground ,azenburn-violet :weight bold :inverse-video t))))
+   `(git-gutter:deleted ((t (:foreground ,azenburn-blue :weight bold :inverse-video t))))
+   `(git-gutter:modified ((t (:foreground ,azenburn-green :weight bold :inverse-video t))))
    `(git-gutter:unchanged ((t (:foreground ,azenburn-fg :weight bold :inverse-video t))))
 
    ;; git-gutter-fr
