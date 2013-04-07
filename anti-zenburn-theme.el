@@ -164,6 +164,10 @@
    `(newsticker-treeview-selection-face ((t (:foreground ,azenburn-dark-blue))))
 
    ;;; external
+   `(ace-jump-face-background
+     ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
+   `(ace-jump-face-foreground
+     ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil))))
 
    ;; full-ack
    `(ack-separator ((t (:foreground ,azenburn-fg))))
