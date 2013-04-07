@@ -104,9 +104,9 @@
    `(match ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg-1))))
+   `(isearch ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg-1))))
    `(isearch-fail ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
-   `(lazy-highlight ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg+2))))
+   `(lazy-highlight ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg-05))))
 
    `(menu ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,azenburn-dark-blue))))
@@ -633,7 +633,7 @@
    '(term-default-bg-color ((t (:inherit term-color-black))))
 
    ;; volatile-highlights
-   `(vhl/default-face ((t (:background ,azenburn-bg+1))))
+   `(vhl/default-face ((t (:background ,azenburn-bg-05))))
 
    ;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,azenburn-dark-blue :underline t
