@@ -189,6 +189,19 @@
    `(popup-scroll-bar-background-face ((t (:background ,azenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,azenburn-bg :foreground ,azenburn-fg))))
 
+   ;; android mode
+   `(android-mode-debug-face ((t (:foreground ,azenburn-violet+1))))
+   `(android-mode-error-face ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(android-mode-info-face ((t (:foreground ,azenburn-fg))))
+   `(android-mode-verbose-face ((t (:foreground ,azenburn-violet))))
+   `(android-mode-warning-face ((t (:foreground ,azenburn-dark-blue))))
+
+   ;; bm
+   `(bm-face ((t (:background ,azenburn-dark-blue-1 :foreground ,azenburn-bg))))
+   `(bm-fringe-face ((t (:background ,azenburn-dark-blue-1 :foreground ,azenburn-bg))))
+   `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
+   `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
+
    ;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,azenburn-blue :weight bold :underline t))))
