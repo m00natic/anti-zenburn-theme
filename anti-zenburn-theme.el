@@ -350,6 +350,11 @@
    `(gnus-signature ((t (:foreground ,azenburn-dark-blue))))
    `(gnus-x ((t (:background ,azenburn-fg :foreground ,azenburn-bg))))
 
+   ;; guide-key
+   `(guide-key/highlight-command-face ((t (:foreground ,azenburn-beige))))
+   `(guide-key/key-face ((t (:foreground ,azenburn-violet))))
+   `(guide-key/prefix-command-face ((t (:foreground ,azenburn-violet+1))))
+
    ;; helm
    `(helm-header
      ((t (:foreground ,azenburn-violet
