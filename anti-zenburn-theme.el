@@ -92,9 +92,9 @@
    `(compilation-line-number ((t (:foreground ,azenburn-dark-blue))))
    `(compilation-message-face ((t (:foreground ,azenburn-beige))))
    `(compilation-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
-   `(compilation-mode-line-exit ((t (:foreground ,azenburn-violet :weight bold))))
+   `(compilation-mode-line-exit ((t (:foreground ,azenburn-violet+2 :weight bold))))
    `(compilation-mode-line-fail ((t (:foreground ,azenburn-blue :weight bold))))
-   `(compilation-mode-line-run ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(compilation-mode-line-run ((t (:foreground ,azenburn-dark-blue :weight bold))))
 
    ;;; grep
    `(grep-context-face ((t (:foreground ,azenburn-fg))))
