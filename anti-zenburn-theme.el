@@ -227,6 +227,32 @@
      ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :bold t))
       (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
 
+   ;; dired+
+   `(diredp-display-msg ((t (:foreground ,azenburn-beige))))
+   `(diredp-compressed-file-suffix ((t (:foreground ,azenburn-light-blue))))
+   `(diredp-date-time ((t (:foreground ,azenburn-green))))
+   `(diredp-deletion ((t (:foreground ,azenburn-dark-blue))))
+   `(diredp-deletion-file-name ((t (:foreground ,azenburn-blue))))
+   `(diredp-dir-heading ((t (:foreground ,azenburn-beige :background ,azenburn-bg-1))))
+   `(diredp-dir-priv ((t (:foreground ,azenburn-bordeaux))))
+   `(diredp-exec-priv ((t (:foreground ,azenburn-blue))))
+   `(diredp-executable-tag ((t (:foreground ,azenburn-violet+1))))
+   `(diredp-file-name ((t (:foreground ,azenburn-beige))))
+   `(diredp-file-suffix ((t (:foreground ,azenburn-violet))))
+   `(diredp-flag-mark ((t (:foreground ,azenburn-dark-blue))))
+   `(diredp-flag-mark-line ((t (:foreground ,azenburn-light-blue))))
+   `(diredp-ignored-file-name ((t (:foreground ,azenburn-blue))))
+   `(diredp-link-priv ((t (:foreground ,azenburn-dark-blue))))
+   `(diredp-mode-line-flagged ((t (:foreground ,azenburn-dark-blue))))
+   `(diredp-mode-line-marked ((t (:foreground ,azenburn-light-blue))))
+   `(diredp-no-priv ((t (:foreground ,azenburn-fg))))
+   `(diredp-number ((t (:foreground ,azenburn-violet+1))))
+   `(diredp-other-priv ((t (:foreground ,azenburn-dark-blue-1))))
+   `(diredp-rare-priv ((t (:foreground ,azenburn-blue-1))))
+   `(diredp-read-priv ((t (:foreground ,azenburn-violet-1))))
+   `(diredp-symlink ((t (:foreground ,azenburn-dark-blue))))
+   `(diredp-write-priv ((t (:foreground ,azenburn-green))))
+
    ;; ert
    `(ert-test-result-expected ((t (:foreground ,azenburn-violet+4 :background ,azenburn-bg))))
    `(ert-test-result-unexpected ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
@@ -371,6 +397,7 @@
    `(helm-selection-line ((t (:background ,azenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,azenburn-bg :background ,azenburn-dark-blue-2))))
    `(helm-candidate-number ((t (:foreground ,azenburn-violet+4 :background ,azenburn-bg-1))))
+   `(helm-ff-directory ((t (:foreground ,azenburn-green))))
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,azenburn-bg-05))
