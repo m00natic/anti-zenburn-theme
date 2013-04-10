@@ -444,6 +444,19 @@
    `(magit-branch ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(magit-item-highlight ((t (:background ,azenburn-bg+1))))
 
+   ;; egg
+   `(egg-text-base ((t (:foreground ,azenburn-fg))))
+   `(egg-help-header-1 ((t (:foreground ,azenburn-dark-blue))))
+   `(egg-help-header-2 ((t (:foreground ,azenburn-violet+3))))
+   `(egg-branch ((t (:foreground ,azenburn-dark-blue))))
+   `(egg-branch-mono ((t (:foreground ,azenburn-dark-blue))))
+   `(egg-term ((t (:foreground ,azenburn-dark-blue))))
+   `(egg-diff-add ((t (:foreground ,azenburn-violet+4))))
+   `(egg-diff-del ((t (:foreground ,azenburn-blue+1))))
+   `(egg-diff-file-header ((t (:foreground ,azenburn-dark-blue-2))))
+   `(egg-section-title ((t (:foreground ,azenburn-dark-blue))))
+   `(egg-stash-mono ((t (:foreground ,azenburn-violet+4))))
+
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment))))
    `(message-header-name ((t (:foreground ,azenburn-violet+1))))
