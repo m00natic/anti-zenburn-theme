@@ -2,7 +2,7 @@
 
 ;; Author: Andrey Kotlarski <m00naticus@gmail.com>
 ;; URL: https://github.com/m00natic/anti-zenburn-theme
-;; Version: 1.8
+;; Version: 2.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -438,6 +438,20 @@
 
    ;; linum-mode
    `(linum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
+
+   ;; macrostep
+   `(macrostep-gensym-1
+     ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg-1))))
+   `(macrostep-gensym-2
+     ((t (:foreground ,azenburn-blue+1 :background ,azenburn-bg-1))))
+   `(macrostep-gensym-3
+     ((t (:foreground ,azenburn-beige+1 :background ,azenburn-bg-1))))
+   `(macrostep-gensym-4
+     ((t (:foreground ,azenburn-green :background ,azenburn-bg-1))))
+   `(macrostep-gensym-5
+     ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg-1))))
+   `(macrostep-macro-face
+     ((t (:underline t))))
 
    ;; magit
    `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
