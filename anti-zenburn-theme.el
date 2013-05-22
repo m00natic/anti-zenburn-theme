@@ -273,6 +273,8 @@
    ;; flycheck
    `(flycheck-error ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(flycheck-warning ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flycheck-fringe-error ((t (:foreground ,azenburn-blue-1 :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,azenburn-light-blue :weight bold))))
 
    ;; flymake
    `(flymake-errline ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
