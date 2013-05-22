@@ -271,18 +271,40 @@
    `(eshell-ls-symlink ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
    ;; flycheck
-   `(flycheck-error ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
-   `(flycheck-warning ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-blue)))
+      (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-light-blue)))
+      (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,azenburn-blue-1 :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,azenburn-light-blue :weight bold))))
 
    ;; flymake
-   `(flymake-errline ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
-   `(flymake-warnline ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flymake-errline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-blue)))
+      (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-light-blue)))
+      (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-violet)))
+      (t (:foreground ,azenburn-violet-1 :weight bold :underline t))))
 
    ;; flyspell
-   `(flyspell-duplicate ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
-   `(flyspell-incorrect ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
+   `(flyspell-duplicate
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-light-blue)))
+      (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flyspell-incorrect
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-blue)))
+      (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
 
    ;; erc
    `(erc-action-face ((t (:inherit erc-default-face))))
