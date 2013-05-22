@@ -271,8 +271,8 @@
    `(eshell-ls-symlink ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
    ;; flycheck
-   `(flycheck-error-face ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
-   `(flycheck-warning-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+   `(flycheck-error ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
+   `(flycheck-warning ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
 
    ;; flymake
    `(flymake-errline ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
