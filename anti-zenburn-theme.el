@@ -273,11 +273,11 @@
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-blue)))
+       (:underline (:style wave :color ,azenburn-blue) :inherit unspecified))
       (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(flycheck-warning
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-light-blue)))
+       (:underline (:style wave :color ,azenburn-light-blue) :inherit unspecified))
       (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,azenburn-blue-1 :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,azenburn-light-blue :weight bold))))
@@ -285,25 +285,28 @@
    ;; flymake
    `(flymake-errline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-blue)))
+       (:underline (:style wave :color ,azenburn-blue)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(flymake-warnline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-light-blue)))
+       (:underline (:style wave :color ,azenburn-light-blue)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(flymake-infoline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-violet)))
+       (:underline (:style wave :color ,azenburn-violet)
+                   :inherit unspecified :foreground unspecified :background unspecified))
       (t (:foreground ,azenburn-violet-1 :weight bold :underline t))))
 
    ;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-light-blue)))
+       (:underline (:style wave :color ,azenburn-light-blue) :inherit unspecified))
       (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(flyspell-incorrect
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-blue)))
+       (:underline (:style wave :color ,azenburn-blue) :inherit unspecified))
       (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
 
    ;; erc
