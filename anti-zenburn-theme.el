@@ -485,7 +485,7 @@
    ;; magit
    `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(magit-branch ((t (:foreground ,azenburn-light-blue :weight bold))))
-   `(magit-item-highlight ((t (:background ,azenburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,azenburn-bg+1 :bold nil))))
 
    ;; egg
    `(egg-text-base ((t (:foreground ,azenburn-fg))))
