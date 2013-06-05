@@ -607,7 +607,7 @@
    `(org-scheduled-previously ((t (:foreground ,azenburn-blue-4))))
    `(org-scheduled-today ((t (:foreground ,azenburn-beige+1))))
    `(org-special-keyword ((t (:foreground ,azenburn-fg-1 :weight normal))))
-   `(org-table ((t (:foreground ,azenburn-violet+2))))
+   `(org-table ((t (:inherit fixed-pitch :foreground ,azenburn-violet+2))))
    `(org-tag ((t (:bold t :weight bold))))
    `(org-time-grid ((t (:foreground ,azenburn-light-blue))))
    `(org-todo ((t (:bold t :foreground ,azenburn-blue :weight bold))))
@@ -615,6 +615,9 @@
    `(org-warning ((t (:bold t :foreground ,azenburn-blue :weight bold :underline nil))))
    `(org-column ((t (:background ,azenburn-bg-1))))
    `(org-column-title ((t (:background ,azenburn-bg-1 :underline t :weight bold))))
+   `(org-code ((t (:inherit (shadow fixed-pitch)))))
+   `(org-block ((t (:inherit (shadow fixed-pitch)))))
+   `(org-block-background ((t (:inherit fixed-pitch))))
 
    ;; outline
    `(outline-1 ((t (:foreground ,azenburn-light-blue))))
