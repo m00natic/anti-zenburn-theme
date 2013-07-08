@@ -135,7 +135,7 @@
    `(font-lock-doc-string-face ((t (:foreground ,azenburn-beige-2))))
    `(font-lock-function-name-face ((t (:foreground ,azenburn-beige))))
    `(font-lock-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
-   `(font-lock-negation-char-face ((t (:foreground ,azenburn-fg))))
+   `(font-lock-negation-char-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,azenburn-beige+1))))
    `(font-lock-string-face ((t (:foreground ,azenburn-blue))))
    `(font-lock-type-face ((t (:foreground ,azenburn-beige-1))))
