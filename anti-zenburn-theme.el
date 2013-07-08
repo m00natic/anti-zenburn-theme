@@ -137,6 +137,8 @@
    `(font-lock-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,azenburn-beige+1))))
+   `(font-lock-regexp-grouping-construct ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(font-lock-regexp-grouping-backslash ((t (:foreground ,azenburn-violet :weight bold))))
    `(font-lock-string-face ((t (:foreground ,azenburn-blue))))
    `(font-lock-type-face ((t (:foreground ,azenburn-beige-1))))
    `(font-lock-variable-name-face ((t (:foreground ,azenburn-light-blue))))
