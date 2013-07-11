@@ -132,7 +132,6 @@
    `(font-lock-comment-delimiter-face ((t (:foreground ,azenburn-violet))))
    `(font-lock-constant-face ((t (:foreground ,azenburn-violet+4))))
    `(font-lock-doc-face ((t (:foreground ,azenburn-violet+1))))
-   `(font-lock-doc-string-face ((t (:foreground ,azenburn-beige-2))))
    `(font-lock-function-name-face ((t (:foreground ,azenburn-beige))))
    `(font-lock-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
