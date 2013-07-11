@@ -443,13 +443,13 @@
    `(ido-subdir ((t (:foreground ,azenburn-dark-blue))))
 
    ;; js2-mode
-   `(js2-warning-face ((t (:underline ,azenburn-light-blue))))
-   `(js2-error-face ((t (:foreground ,azenburn-blue :weight bold))))
-   `(js2-jsdoc-tag-face ((t (:foreground ,azenburn-violet-1))))
-   `(js2-jsdoc-type-face ((t (:foreground ,azenburn-violet+2))))
-   `(js2-jsdoc-value-face ((t (:foreground ,azenburn-violet+3))))
-   `(js2-function-param-face ((t (:foreground, azenburn-violet+3))))
-   `(js2-external-variable-face ((t (:foreground ,azenburn-light-blue))))
+   `(js2-warning ((t (:underline ,azenburn-light-blue))))
+   `(js2-error ((t (:foreground ,azenburn-blue :weight bold))))
+   `(js2-jsdoc-tag ((t (:foreground ,azenburn-violet-1))))
+   `(js2-jsdoc-type ((t (:foreground ,azenburn-violet+2))))
+   `(js2-jsdoc-value ((t (:foreground ,azenburn-violet+3))))
+   `(js2-function-param ((t (:foreground, azenburn-violet+3))))
+   `(js2-external-variable ((t (:foreground ,azenburn-light-blue))))
 
    ;; jabber-mode
    `(jabber-roster-user-away ((t (:foreground ,azenburn-violet+2))))
