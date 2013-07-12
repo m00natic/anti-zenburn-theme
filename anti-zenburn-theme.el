@@ -127,12 +127,12 @@
    `(vertical-border ((t (:foreground ,azenburn-fg))))
 
    ;;; font lock
-   `(font-lock-builtin-face ((t (:foreground ,azenburn-bordeaux))))
+   `(font-lock-builtin-face ((t (:foreground ,azenburn-fg :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,azenburn-violet))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,azenburn-violet))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,azenburn-violet-1))))
    `(font-lock-constant-face ((t (:foreground ,azenburn-violet+4))))
    `(font-lock-doc-face ((t (:foreground ,azenburn-violet+1))))
-   `(font-lock-function-name-face ((t (:foreground ,azenburn-beige))))
+   `(font-lock-function-name-face ((t (:foreground ,azenburn-bordeaux))))
    `(font-lock-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,azenburn-beige+1))))
