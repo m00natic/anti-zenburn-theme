@@ -271,6 +271,9 @@
    `(eshell-ls-special ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
+   ;; flx
+   `(flx-highlight-face ((t (:foreground ,azenburn-violet+2 :weight bold))))
+
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
