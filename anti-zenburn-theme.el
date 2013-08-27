@@ -634,6 +634,12 @@
    `(outline-7 ((t (:foreground ,azenburn-blue-4))))
    `(outline-8 ((t (:foreground ,azenburn-beige-4))))
 
+   ;; powerline
+   `(powerline-active1 ((t (:background ,azenburn-bg-05 :inherit mode-line))))
+   `(powerline-active2 ((t (:background ,azenburn-bg+1 :inherit mode-line))))
+   `(powerline-inactive1 ((t (:background ,azenburn-bg+2 :inherit mode-line-inactive))))
+   `(powerline-inactive2 ((t (:background ,azenburn-bg+3 :inherit mode-line-inactive))))
+
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,azenburn-fg))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,azenburn-violet+2))))
