@@ -636,8 +636,8 @@
 
    ;; powerline
    `(powerline-active1 ((t (:background ,azenburn-bg-05 :inherit mode-line))))
-   `(powerline-active2 ((t (:background ,azenburn-bg+1 :inherit mode-line))))
-   `(powerline-inactive1 ((t (:background ,azenburn-bg+2 :inherit mode-line-inactive))))
+   `(powerline-active2 ((t (:background ,azenburn-bg+2 :inherit mode-line))))
+   `(powerline-inactive1 ((t (:background ,azenburn-bg+1 :inherit mode-line-inactive))))
    `(powerline-inactive2 ((t (:background ,azenburn-bg+3 :inherit mode-line-inactive))))
 
    ;; rainbow-delimiters
