@@ -254,6 +254,24 @@
    `(diredp-symlink ((t (:foreground ,azenburn-dark-blue))))
    `(diredp-write-priv ((t (:foreground ,azenburn-green))))
 
+   ;; ediff
+   `(ediff-current-diff-A ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
+   `(ediff-current-diff-Ancestor ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
+   `(ediff-current-diff-B ((t (:foreground ,azenburn-fg :background ,azenburn-violet-1))))
+   `(ediff-current-diff-C ((t (:foreground ,azenburn-fg :background ,azenburn-beige-5))))
+   `(ediff-even-diff-A ((t (:background ,azenburn-bg+1))))
+   `(ediff-even-diff-Ancestor ((t (:background ,azenburn-bg+1))))
+   `(ediff-even-diff-B ((t (:background ,azenburn-bg+1))))
+   `(ediff-even-diff-C ((t (:background ,azenburn-bg+1))))
+   `(ediff-fine-diff-A ((t (:foreground ,azenburn-fg :background ,azenburn-blue-2 :weight bold))))
+   `(ediff-fine-diff-Ancestor ((t (:foreground ,azenburn-fg :background ,azenburn-blue-2 weight bold))))
+   `(ediff-fine-diff-B ((t (:foreground ,azenburn-fg :background ,azenburn-violet :weight bold))))
+   `(ediff-fine-diff-C ((t (:foreground ,azenburn-fg :background ,azenburn-beige-3 :weight bold ))))
+   `(ediff-odd-diff-A ((t (:background ,azenburn-bg+2))))
+   `(ediff-odd-diff-Ancestor ((t (:background ,azenburn-bg+2))))
+   `(ediff-odd-diff-B ((t (:background ,azenburn-bg+2))))
+   `(ediff-odd-diff-C ((t (:background ,azenburn-bg+2))))
+
    ;; ert
    `(ert-test-result-expected ((t (:foreground ,azenburn-violet+4 :background ,azenburn-bg))))
    `(ert-test-result-unexpected ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
