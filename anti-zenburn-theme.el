@@ -177,10 +177,10 @@
    `(ack-match ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg-1 :weight bold))))
 
    ;; auctex
-   `(font-latex-bold ((t (:inherit bold))))
-   `(font-latex-warning ((t (:inherit font-lock-warning))))
-   `(font-latex-sedate ((t (:foreground ,azenburn-dark-blue :weight bold ))))
-   `(font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
+   `(font-latex-bold-face ((t (:inherit bold))))
+   `(font-latex-warning-face ((t (:inherit font-lock-warning))))
+   `(font-latex-sectioning-5-face ((t (:foreground ,azenburn-blue :weight bold ))))
+   `(font-latex-sedate-face ((t (:foreground ,azenburn-dark-blue))))
 
    ;; auto-complete
    `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground "white"))))
