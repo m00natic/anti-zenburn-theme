@@ -634,6 +634,17 @@
    `(outline-7 ((t (:foreground ,azenburn-blue-4))))
    `(outline-8 ((t (:foreground ,azenburn-beige-4))))
 
+   ;; p4
+   `(p4-depot-added-face ((t :inherit diff-added)))
+   `(p4-depot-branch-op-face ((t :inherit diff-changed)))
+   `(p4-depot-deleted-face ((t :inherit diff-removed)))
+   `(p4-depot-unmapped-face ((t :inherit diff-changed)))
+   `(p4-diff-change-face ((t :inherit diff-changed)))
+   `(p4-diff-del-face ((t :inherit diff-removed)))
+   `(p4-diff-file-face ((t :inherit diff-file-header)))
+   `(p4-diff-head-face ((t :inherit diff-header)))
+   `(p4-diff-ins-face ((t :inherit diff-added)))
+
    ;; powerline
    `(powerline-active1 ((t (:background ,azenburn-bg-05 :inherit mode-line))))
    `(powerline-active2 ((t (:background ,azenburn-bg+2 :inherit mode-line))))
