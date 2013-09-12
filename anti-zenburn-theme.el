@@ -463,6 +463,9 @@
    `(ido-only-match ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(ido-subdir ((t (:foreground ,azenburn-dark-blue))))
 
+   ;; iedit-mode
+   `(iedit-occurrence ((t (:background ,azenburn-bg+2 :weight bold))))
+
    ;; js2-mode
    `(js2-warning ((t (:underline ,azenburn-light-blue))))
    `(js2-error ((t (:foreground ,azenburn-blue :weight bold))))
