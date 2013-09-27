@@ -170,6 +170,9 @@
    `(ace-jump-face-foreground
      ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil))))
 
+   ;; anzu
+   `(anzu-mode-line ((t (:foreground ,azenburn-bordeaux :weight bold))))
+
    ;; full-ack
    `(ack-separator ((t (:foreground ,azenburn-fg))))
    `(ack-file ((t (:foreground ,azenburn-beige))))
