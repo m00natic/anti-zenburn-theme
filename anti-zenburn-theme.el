@@ -726,7 +726,7 @@
    `(show-paren-match ((t (:foreground ,azenburn-beige-1 :background ,azenburn-bg :weight bold))))
 
    ;; smartparens
-   `(sp-show-pair-mismatch-face ((t (:background ,azenburn-bordeaux :weight bold))))
+   `(sp-show-pair-mismatch-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-blue-3 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,azenburn-bg+3 :weight bold))))
 
    ;; sml-mode-line
