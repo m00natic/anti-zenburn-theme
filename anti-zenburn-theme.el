@@ -666,6 +666,9 @@
    `(p4-diff-head-face ((t :inherit diff-header)))
    `(p4-diff-ins-face ((t :inherit diff-added)))
 
+   ;; perspective
+   `(persp-selected-face ((t (:foreground ,azenburn-dark-blue-2 :inherit mode-line))))
+
    ;; powerline
    `(powerline-active1 ((t (:background ,azenburn-bg-05 :inherit mode-line))))
    `(powerline-active2 ((t (:background ,azenburn-bg+2 :inherit mode-line))))
