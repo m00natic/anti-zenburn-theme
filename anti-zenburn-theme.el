@@ -677,17 +677,17 @@
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,azenburn-fg))))
-   `(rainbow-delimiters-depth-2-face ((t (:foreground ,azenburn-violet+2))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,azenburn-violet+4))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,azenburn-dark-blue-2))))
    `(rainbow-delimiters-depth-4-face ((t (:foreground ,azenburn-bordeaux))))
-   `(rainbow-delimiters-depth-5-face ((t (:foreground ,azenburn-violet-1))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,azenburn-violet+2))))
    `(rainbow-delimiters-depth-6-face ((t (:foreground ,azenburn-beige+1))))
    `(rainbow-delimiters-depth-7-face ((t (:foreground ,azenburn-dark-blue-1))))
    `(rainbow-delimiters-depth-8-face ((t (:foreground ,azenburn-violet+1))))
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,azenburn-beige-2))))
    `(rainbow-delimiters-depth-10-face ((t (:foreground ,azenburn-light-blue))))
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,azenburn-violet))))
-   `( rainbow-delimiters-depth-12-face ((t (:foreground ,azenburn-beige-5))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,azenburn-beige-5))))
 
    ;;rcirc
    `(rcirc-my-nick ((t (:foreground ,azenburn-beige))))
