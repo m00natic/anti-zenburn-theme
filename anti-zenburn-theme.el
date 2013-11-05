@@ -183,7 +183,7 @@
 
    ;; auctex
    `(font-latex-bold-face ((t (:inherit bold))))
-   `(font-latex-warning-face ((t (:inherit font-lock-warning))))
+   '(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,azenburn-blue :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,azenburn-dark-blue))))
 
@@ -284,13 +284,13 @@
    ;; eshell
    `(eshell-prompt ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(eshell-ls-archive ((t (:foreground ,azenburn-blue-1 :weight bold))))
-   `(eshell-ls-backup ((t (:inherit font-lock-comment))))
-   `(eshell-ls-clutter ((t (:inherit font-lock-comment))))
+   '(eshell-ls-backup ((t (:inherit font-lock-comment-face))))
+   '(eshell-ls-clutter ((t (:inherit font-lock-comment-face))))
    `(eshell-ls-directory ((t (:foreground ,azenburn-beige+1 :weight bold))))
    `(eshell-ls-executable ((t (:foreground ,azenburn-blue+1 :weight bold))))
    `(eshell-ls-unreadable ((t (:foreground ,azenburn-fg))))
-   `(eshell-ls-missing ((t (:inherit font-lock-warning))))
-   `(eshell-ls-product ((t (:inherit font-lock-doc))))
+   '(eshell-ls-missing ((t (:inherit font-lock-warning-face))))
+   '(eshell-ls-product ((t (:inherit font-lock-doc-face))))
    `(eshell-ls-special ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
@@ -340,12 +340,12 @@
    `(erc-action-face ((t (:inherit erc-default-face))))
    `(erc-bold-face ((t (:weight bold))))
    `(erc-current-nick-face ((t (:foreground ,azenburn-beige :weight bold))))
-   `(erc-dangerous-host-face ((t (:inherit font-lock-warning))))
+   '(erc-dangerous-host-face ((t (:inherit font-lock-warning-face))))
    `(erc-default-face ((t (:foreground ,azenburn-fg))))
    `(erc-direct-msg-face ((t (:inherit erc-default))))
-   `(erc-error-face ((t (:inherit font-lock-warning))))
    `(erc-fool-face ((t (:inherit erc-default))))
    `(erc-highlight-face ((t (:inherit hover-highlight))))
+   '(erc-error-face ((t (:inherit font-lock-warning-face))))
    `(erc-input-face ((t (:foreground ,azenburn-dark-blue))))
    `(erc-keyword-face ((t (:foreground ,azenburn-beige :weight bold))))
    `(erc-nick-default-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -531,7 +531,7 @@
    `(egg-stash-mono ((t (:foreground ,azenburn-violet+4))))
 
    ;; message-mode
-   `(message-cited-text ((t (:inherit font-lock-comment))))
+   '(message-cited-text ((t (:inherit font-lock-comment-face))))
    `(message-header-name ((t (:foreground ,azenburn-violet+1))))
    `(message-header-other ((t (:foreground ,azenburn-violet))))
    `(message-header-to ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -541,7 +541,7 @@
    `(message-header-subject ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(message-header-xheader ((t (:foreground ,azenburn-violet))))
    `(message-mml ((t (:foreground ,azenburn-dark-blue :weight bold))))
-   `(message-separator ((t (:inherit font-lock-comment))))
+   '(message-separator ((t (:inherit font-lock-comment-face))))
 
    ;; mew
    `(mew-face-header-subject ((t (:foreground ,azenburn-light-blue))))
