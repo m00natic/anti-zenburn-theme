@@ -752,6 +752,10 @@
    `(rst-level-5-face ((t (:foreground ,azenburn-bordeaux))))
    `(rst-level-6-face ((t (:foreground ,azenburn-violet-1))))
 
+   ;; sh-mode
+   `(sh-heredoc     ((t (:foreground ,azenburn-dark-blue :bold t))))
+   `(sh-quoted-exec ((t (:foreground ,azenburn-blue))))
+
    ;; show-paren
    `(show-paren-mismatch ((t (:foreground ,azenburn-blue-3 :background ,azenburn-bg :weight bold))))
    `(show-paren-match ((t (:foreground ,azenburn-beige-1 :background ,azenburn-bg :weight bold))))
