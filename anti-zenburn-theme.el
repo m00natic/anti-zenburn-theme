@@ -770,6 +770,15 @@
    ;; SLIME
    `(slime-repl-inputed-output-face ((t (:foreground ,azenburn-blue))))
 
+   ;; speedbar
+   `(speedbar-button-face ((t (:foreground ,azenburn-violet+2))))
+   `(speedbar-directory-face ((t (:foreground ,azenburn-bordeaux))))
+   `(speedbar-file-face ((t (:foreground ,azenburn-fg))))
+   `(speedbar-highlight-face ((t (:foreground ,azenburn-bg :background ,azenburn-violet+2))))
+   `(speedbar-selected-face ((t (:foreground ,azenburn-blue))))
+   `(speedbar-separator-face ((t (:foreground ,azenburn-bg :background ,azenburn-beige-1))))
+   `(speedbar-tag-face ((t (:foreground ,azenburn-dark-blue))))
+
    ;; tabbar
    `(tabbar-button ((t (:foreground ,azenburn-fg
 				    :background ,azenburn-bg))))
