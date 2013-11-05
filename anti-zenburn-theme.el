@@ -770,6 +770,13 @@
    '(term-default-fg-color ((t (:inherit term-color-white))))
    '(term-default-bg-color ((t (:inherit term-color-black))))
 
+   ;; undo-tree
+   `(undo-tree-visualizer-active-branch-face ((t (:foreground ,azenburn-fg+1 :weight bold))))
+   `(undo-tree-visualizer-current-face ((t (:foreground ,azenburn-blue-1 :weight bold))))
+   `(undo-tree-visualizer-default-face ((t (:foreground ,azenburn-fg))))
+   `(undo-tree-visualizer-register-face ((t (:foreground ,azenburn-dark-blue))))
+   `(undo-tree-visualizer-unmodified-face ((t (:foreground ,azenburn-bordeaux))))
+
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,azenburn-bg-05))))
 
