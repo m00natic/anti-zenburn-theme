@@ -649,6 +649,10 @@
    `(org-warning ((t (:bold t :foreground ,azenburn-blue :weight bold :underline nil))))
    `(org-column ((t (:background ,azenburn-bg-1))))
    `(org-column-title ((t (:background ,azenburn-bg-1 :underline t :weight bold))))
+   `(org-mode-line-clock ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
+   `(org-mode-line-clock-overrun ((t (:foreground ,azenburn-bg :background ,azenburn-blue-1))))
+   `(org-ellipsis ((t (:foreground ,azenburn-dark-blue-1 :underline t))))
+   `(org-footnote ((t (:foreground ,azenburn-bordeaux :underline t))))
 
    ;; outline
    `(outline-1 ((t (:foreground ,azenburn-light-blue))))
