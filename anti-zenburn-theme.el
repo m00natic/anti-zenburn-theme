@@ -684,6 +684,25 @@
    `(powerline-inactive1 ((t (:background ,azenburn-bg+1 :inherit mode-line-inactive))))
    `(powerline-inactive2 ((t (:background ,azenburn-bg+3 :inherit mode-line-inactive))))
 
+   ;; proofgeneral
+   '(proof-active-area-face ((t (:underline t))))
+   `(proof-boring-face ((t (:foreground ,azenburn-fg :background ,azenburn-bg+2))))
+   '(proof-command-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
+   '(proof-debug-message-face ((t (:inherit proof-boring-face))))
+   '(proof-declaration-name-face ((t (:inherit font-lock-keyword-face :foreground nil))))
+   `(proof-eager-annotation-face ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
+   `(proof-error-face ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
+   `(proof-highlight-dependency-face ((t (:foreground ,azenburn-bg :background ,azenburn-dark-blue-1))))
+   `(proof-highlight-dependent-face ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
+   `(proof-locked-face ((t (:background ,azenburn-beige-5))))
+   `(proof-mouse-highlight-face ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
+   `(proof-queue-face ((t (:background ,azenburn-blue-4))))
+   '(proof-region-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
+   `(proof-script-highlight-error-face ((t (:background ,azenburn-blue-2))))
+   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,azenburn-bg))))
+   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,azenburn-bg))))
+   `(proof-warning-face ((t (:foreground ,azenburn-bg :background ,azenburn-dark-blue-1))))
+
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,azenburn-fg))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,azenburn-violet+4))))
