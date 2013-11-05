@@ -213,6 +213,9 @@
    `(clojure-test-error-face ((t (:foreground ,azenburn-blue :weight bold :underline t))))
    `(clojure-test-success-face ((t (:foreground ,azenburn-violet+1 :weight bold :underline t))))
 
+   ;; coq
+   '(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
+
    ;; ctable
    `(ctbl:face-cell-select ((t (:background ,azenburn-beige :foreground ,azenburn-bg))))
    `(ctbl:face-continue-bar ((t (:background ,azenburn-bg-05 :foreground ,azenburn-bg))))
