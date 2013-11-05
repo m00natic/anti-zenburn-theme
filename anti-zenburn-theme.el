@@ -29,8 +29,10 @@
 (let ((class '((class color) (min-colors 89)))
       ;; Zenburn palette reversed
       ;; colors with -x are lighter, colors with +x are darker
+      (azenburn-fg+1 "#000010")
       (azenburn-fg "#232333")
       (azenburn-fg-1 "#9a9aaa")
+      (azenburn-bg-2 "#FFFFFF")
       (azenburn-bg-1 "#d4d4d4")
       (azenburn-bg-05 "#c7c7c7")
       (azenburn-bg "#c0c0c0")
@@ -70,7 +72,7 @@
 
    ;;; basic coloring
    `(default ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
-   `(cursor ((t (:foreground ,azenburn-fg :background "black"))))
+   `(cursor ((t (:foreground ,azenburn-fg :background ,azenburn-fg+1))))
    `(escape-glyph ((t (:foreground ,azenburn-dark-blue :bold t))))
    `(fringe ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(header-line ((t (:foreground ,azenburn-dark-blue
@@ -186,9 +188,9 @@
    `(font-latex-sedate-face ((t (:foreground ,azenburn-dark-blue))))
 
    ;; auto-complete
-   `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground "white"))))
+   `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-bg-2))))
    `(ac-selection-face ((t (:background ,azenburn-beige-4 :foreground ,azenburn-fg))))
-   `(popup-tip-face ((t (:background ,azenburn-dark-blue-2 :foreground "white"))))
+   `(popup-tip-face ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-bg-2))))
    `(popup-scroll-bar-foreground-face ((t (:background ,azenburn-beige-5))))
    `(popup-scroll-bar-background-face ((t (:background ,azenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,azenburn-bg :foreground ,azenburn-fg))))
@@ -610,11 +612,11 @@
 
    ;; org-mode
    `(org-agenda-date-today
-     ((t (:foreground "black" :slant italic :weight bold))) t)
+     ((t (:foreground ,azenburn-fg+1 :slant italic :weight bold))) t)
    `(org-agenda-structure
      ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,azenburn-fg :weight bold))))
-   `(org-checkbox ((t (:background ,azenburn-bg+2 :foreground "black"
+   `(org-checkbox ((t (:background ,azenburn-bg+2 :foreground ,azenburn-fg+1
 				   :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,azenburn-beige :underline t))))
    `(org-deadline-announce ((t (:foreground ,azenburn-blue-1))))
