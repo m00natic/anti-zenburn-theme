@@ -303,14 +303,19 @@
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-blue) :inherit unspecified))
+       (:underline (:style wave :color ,azenburn-blue-1) :inherit unspecified))
       (t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(flycheck-warning
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,azenburn-light-blue) :inherit unspecified))
-      (t (:foreground ,azenburn-light-blue :weight bold :underline t))))
+       (:underline (:style wave :color ,azenburn-dark-blue) :inherit unspecified))
+      (t (:foreground ,azenburn-dark-blue :weight bold :underline t))))
+   `(flycheck-info
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-bordeaux) :inherit unspecified))
+      (t (:foreground ,azenburn-bordeaux :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,azenburn-blue-1 :weight bold))))
-   `(flycheck-fringe-warning ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(flycheck-fringe-info ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
    ;; flymake
    `(flymake-errline
