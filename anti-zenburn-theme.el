@@ -475,6 +475,7 @@
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(ido-only-match ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(ido-subdir ((t (:foreground ,azenburn-dark-blue))))
+   `(ido-indicator ((t (:foreground ,azenburn-dark-blue :background ,azenburn-blue-4))))
 
    ;; iedit-mode
    `(iedit-occurrence ((t (:background ,azenburn-bg+2 :weight bold))))
@@ -771,7 +772,25 @@
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 
    ;; SLIME
-   `(slime-repl-inputed-output-face ((t (:foreground ,azenburn-blue))))
+   `(slime-repl-output-face ((t (:foreground ,azenburn-blue))))
+   `(slime-repl-inputed-output-face ((t (:foreground ,azenburn-violet))))
+   `(slime-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-blue)))
+      ((t (:underline ,azenburn-blue)))))
+   `(slime-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-light-blue)))
+      ((t (:underline ,azenburn-light-blue)))))
+   `(slime-style-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-dark-blue)))
+      ((t (:underline ,azenburn-dark-blue)))))
+   `(slime-note-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-violet)))
+      ((t (:underline ,azenburn-violet)))))
+   '(slime-highlight-face ((t (:inherit highlight))))
 
    ;; speedbar
    `(speedbar-button-face ((t (:foreground ,azenburn-violet+2))))
