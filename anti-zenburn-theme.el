@@ -777,19 +777,19 @@
    `(slime-error-face
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,azenburn-blue)))
-      ((t (:underline ,azenburn-blue)))))
+      (t (:underline ,azenburn-blue))))
    `(slime-warning-face
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,azenburn-light-blue)))
-      ((t (:underline ,azenburn-light-blue)))))
+      (t (:underline ,azenburn-light-blue))))
    `(slime-style-warning-face
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,azenburn-dark-blue)))
-      ((t (:underline ,azenburn-dark-blue)))))
+      (t (:underline ,azenburn-dark-blue))))
    `(slime-note-face
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,azenburn-violet)))
-      ((t (:underline ,azenburn-violet)))))
+      (t (:underline ,azenburn-violet))))
    '(slime-highlight-face ((t (:inherit highlight))))
 
    ;; speedbar
