@@ -789,11 +789,11 @@
    `(sh-quoted-exec ((t (:foreground ,azenburn-blue))))
 
    ;; show-paren
-   `(show-paren-mismatch ((t (:foreground ,azenburn-blue-3 :background ,azenburn-bg :weight bold))))
-   `(show-paren-match ((t (:foreground ,azenburn-beige-1 :background ,azenburn-bg :weight bold))))
+   `(show-paren-mismatch ((t (:foreground ,azenburn-blue+1 :background ,azenburn-bg+3 :weight bold))))
+   `(show-paren-match ((t (:background ,azenburn-bg+3 :weight bold))))
 
    ;; smartparens
-   `(sp-show-pair-mismatch-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-blue-3 :weight bold))))
+   `(sp-show-pair-mismatch-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-blue+1 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,azenburn-bg+3 :weight bold))))
 
    ;; sml-mode-line
