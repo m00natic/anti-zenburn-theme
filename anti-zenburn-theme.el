@@ -530,6 +530,25 @@
    '(jabber-title-medium ((t (:height 1.2 :weight bold))))
    '(jabber-title-large ((t (:height 1.3 :weight bold))))
 
+   ;; ledger-mode
+   `(ledger-font-payee-uncleared-face ((t (:foreground ,azenburn-blue-1 :weight bold))))
+   `(ledger-font-payee-cleared-face ((t (:foreground ,azenburn-fg :weight normal))))
+   `(ledger-font-xact-highlight-face ((t (:background ,azenburn-bg+1))))
+   `(ledger-font-pending-face ((t (:foreground ,azenburn-light-blue weight: normal))))
+   `(ledger-font-other-face ((t (:foreground ,azenburn-fg))))
+   `(ledger-font-posting-account-face ((t (:foreground ,azenburn-beige-1))))
+   `(ledger-font-posting-account-cleared-face ((t (:foreground ,azenburn-fg))))
+   `(ledger-font-posting-account-pending-face ((t (:foreground ,azenburn-light-blue))))
+   `(ledger-font-posting-amount-face ((t (:foreground ,azenburn-light-blue))))
+   `(ledger-font-posting-account-pending-face ((t (:foreground ,azenburn-light-blue))))
+   `(ledger-occur-narrowed-face ((t (:foreground ,azenburn-fg-1 :invisible t))))
+   `(ledger-occur-xact-face ((t (:background ,azenburn-bg+1))))
+   `(ledger-font-comment-face ((t (:foreground ,azenburn-violet))))
+   `(ledger-font-reconciler-uncleared-face ((t (:foreground ,azenburn-blue-1 :weight bold))))
+   `(ledger-font-reconciler-cleared-face ((t (:foreground ,azenburn-fg :weight normal))))
+   `(ledger-font-reconciler-pending-face ((t (:foreground ,azenburn-light-blue :weight normal))))
+   `(ledger-font-report-clickable-face ((t (:foreground ,azenburn-light-blue :weight normal))))
+
    ;; linum-mode
    `(linum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
 
