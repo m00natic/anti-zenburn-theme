@@ -186,6 +186,9 @@
    '(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,azenburn-blue :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,azenburn-dark-blue))))
+   `(font-latex-italic-face ((t (:foreground ,azenburn-bordeaux :slant italic))))
+   `(font-latex-string-face ((t (:inherit ,font-lock-string-face))))
+   `(font-latex-math-face ((t (:foreground ,azenburn-light-blue))))
 
    ;; auto-complete
    `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-bg-2))))
