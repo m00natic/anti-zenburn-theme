@@ -164,7 +164,7 @@
    `(newsticker-treeview-new-face ((t (:foreground ,azenburn-beige :weight bold))))
    `(newsticker-treeview-obsolete-face ((t (:foreground ,azenburn-blue))))
    `(newsticker-treeview-old-face ((t (:foreground ,azenburn-bg+3))))
-   `(newsticker-treeview-selection-face ((t (:foreground ,azenburn-dark-blue))))
+   `(newsticker-treeview-selection-face ((t (:background ,azenburn-bg-1 :foreground ,azenburn-dark-blue))))
 
    ;;; external
    `(ace-jump-face-background
