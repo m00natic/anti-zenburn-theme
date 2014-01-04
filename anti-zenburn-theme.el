@@ -365,7 +365,7 @@
    `(erc-notice-face ((t (:foreground ,azenburn-violet))))
    `(erc-pal-face ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(erc-prompt-face ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg :weight bold))))
-   `(erc-timestamp-face ((t (:foreground ,azenburn-violet+1))))
+   `(erc-timestamp-face ((t (:foreground ,azenburn-violet+4))))
    '(erc-underline-face ((t (:underline t))))
 
    ;; git-gutter
@@ -691,9 +691,9 @@
    `(org-level-8 ((t (:foreground ,azenburn-beige-4))))
    `(org-link ((t (:foreground ,azenburn-dark-blue-2 :underline t))))
    `(org-scheduled ((t (:foreground ,azenburn-violet+4))))
-   `(org-scheduled-previously ((t (:foreground ,azenburn-blue-4))))
+   `(org-scheduled-previously ((t (:foreground ,azenburn-blue))))
    `(org-scheduled-today ((t (:foreground ,azenburn-beige+1))))
-   `(org-special-keyword ((t (:foreground ,azenburn-fg-1 :weight normal))))
+   `(org-special-keyword ((t (:inherit font-lock-comment-face))))
    `(org-sexp-date ((t (:foreground ,azenburn-beige+1 :underline t))))
    `(org-table ((t (:foreground ,azenburn-violet+2))))
    `(org-tag ((t (:bold t :weight bold))))
