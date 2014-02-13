@@ -106,7 +106,7 @@
    `(match ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg-1))))
+   `(isearch ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
    `(lazy-highlight ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg-05))))
 
