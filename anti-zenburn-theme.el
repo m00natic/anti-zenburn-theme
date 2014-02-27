@@ -573,6 +573,8 @@
    `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(magit-branch ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(magit-item-highlight ((t (:background ,azenburn-bg+1 :bold nil))))
+   `(magit-log-author ((t (:foreground ,azenburn-light-blue))))
+   `(magit-log-sha1 ((t (:foreground ,azenburn-light-blue))))
 
    ;; egg
    `(egg-text-base ((t (:foreground ,azenburn-fg))))
