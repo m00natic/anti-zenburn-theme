@@ -379,6 +379,9 @@
    `(git-gutter-fr:deleted ((t (:foreground ,azenburn-blue :weight bold))))
    `(git-gutter-fr:modified ((t (:foreground ,azenburn-green :weight bold))))
 
+   ;; git-rebase-mode
+   `(git-rebase-hash ((t (:foreground ,azenburn-light-blue))))
+
    ;; gnus
    '(gnus-group-mail-1 ((t (:bold t :inherit gnus-group-mail-1-empty))))
    '(gnus-group-mail-1-empty ((t (:inherit gnus-group-news-1-empty))))
