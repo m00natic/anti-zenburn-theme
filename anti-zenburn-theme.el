@@ -239,6 +239,9 @@
      ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :bold t))
       (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
 
+   ;; dim-autoload
+   `(dim-autoload-cookie-line ((t :foreground ,azenburn-bg+1)))
+
    ;; dired+
    `(diredp-display-msg ((t (:foreground ,azenburn-beige))))
    `(diredp-compressed-file-suffix ((t (:foreground ,azenburn-light-blue))))
