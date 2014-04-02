@@ -211,6 +211,17 @@
    `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
+   ;; company-mode
+   `(company-tooltip ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg+1))))
+   `(company-tooltip-selection ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
+   `(company-tooltip-mouse ((t (:background ,azenburn-bg-1))))
+   `(company-tooltip-common ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg-1))))
+   `(company-tooltip-common-selection ((t (:background ,azenburn-bg-1))))
+   `(company-scrollbar-fg ((t (:background ,azenburn-violet+1))))
+   `(company-scrollbar-bg ((t (:background ,azenburn-bg-1))))
+   `(company-preview ((t (:background ,azenburn-violet+1))))
+   `(company-preview-common ((t (:background ,azenburn-bg-1))))
+
    ;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,azenburn-blue :weight bold :underline t))))
