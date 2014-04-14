@@ -250,6 +250,12 @@
      ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :bold t))
       (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
 
+   ;; diff-hl
+   `(diff-hl-change ((,class (:foreground ,azenburn-bordeaux))))
+   `(diff-hl-delete ((,class (:foreground ,azenburn-blue+1))))
+   `(diff-hl-insert ((,class (:foreground ,azenburn-violet+2))))
+   `(diff-hl-unknown ((,class (:foreground ,azenburn-dark-blue))))
+
    ;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,azenburn-bg+1)))
 
