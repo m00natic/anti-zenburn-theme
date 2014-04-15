@@ -593,9 +593,11 @@
    '(macrostep-macro-face ((t (:underline t))))
 
    ;; magit
-   `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
-   `(magit-branch ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(magit-item-highlight ((t (:background ,azenburn-bg+1))))
+   `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(magit-process-ok ((t (:foreground ,azenburn-violet :weight bold))))
+   `(magit-process-ng ((t (:foreground ,azenburn-blue :weight bold))))
+   `(magit-branch ((t (:foreground ,azenburn-beige :weight bold))))
    `(magit-log-author ((t (:foreground ,azenburn-light-blue))))
    `(magit-log-sha1 ((t (:foreground ,azenburn-light-blue))))
 
