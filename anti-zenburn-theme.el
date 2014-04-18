@@ -251,10 +251,10 @@
       (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
 
    ;; diff-hl
-   `(diff-hl-change ((,class (:foreground ,azenburn-bordeaux))))
-   `(diff-hl-delete ((,class (:foreground ,azenburn-blue+1))))
-   `(diff-hl-insert ((,class (:foreground ,azenburn-violet+2))))
-   `(diff-hl-unknown ((,class (:foreground ,azenburn-dark-blue))))
+   `(diff-hl-change ((,class (:foreground ,azenburn-beige-2 :background ,azenburn-bg-05))))
+   `(diff-hl-delete ((,class (:foreground ,azenburn-blue+1 :background ,azenburn-bg-05))))
+   `(diff-hl-insert ((,class :foreground ,azenburn-violet+1 :background ,azenburn-bg-05)))
+   `(diff-hl-unknown ((,class (:foreground ,azenburn-dark-blue :background ,azenburn-bg-05))))
 
    ;; dim-autoload
    `(dim-autoload-cookie-line ((t :foreground ,azenburn-bg+1)))
