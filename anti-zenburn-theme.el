@@ -36,6 +36,7 @@
       (azenburn-bg-1 "#d4d4d4")
       (azenburn-bg-05 "#c7c7c7")
       (azenburn-bg "#c0c0c0")
+      (azenburn-bg+05 "#b6b6b6")
       (azenburn-bg+1 "#b0b0b0")
       (azenburn-bg+2 "#a0a0a0")
       (azenburn-bg+3 "#909090")
@@ -593,7 +594,7 @@
    '(macrostep-macro-face ((t (:underline t))))
 
    ;; magit
-   `(magit-item-highlight ((t (:background ,azenburn-bg+1))))
+   `(magit-item-highlight ((t (:background ,azenburn-bg+05))))
    `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(magit-process-ok ((t (:foreground ,azenburn-violet :weight bold))))
    `(magit-process-ng ((t (:foreground ,azenburn-blue :weight bold))))
