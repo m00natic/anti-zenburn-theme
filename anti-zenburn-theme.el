@@ -213,11 +213,11 @@
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
    ;; company-mode
-   `(company-tooltip ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg+1))))
+   `(company-tooltip ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(company-tooltip-selection ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
    `(company-tooltip-mouse ((t (:background ,azenburn-bg-1))))
-   `(company-tooltip-common ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg-1))))
-   `(company-tooltip-common-selection ((t (:background ,azenburn-bg-1))))
+   `(company-tooltip-common ((t (:foreground ,azenburn-violet+2))))
+   `(company-tooltip-common-selection ((t (:foreground ,azenburn-violet+2))))
    `(company-scrollbar-fg ((t (:background ,azenburn-violet+1))))
    `(company-scrollbar-bg ((t (:background ,azenburn-bg-1))))
    `(company-preview ((t (:background ,azenburn-violet+1))))
