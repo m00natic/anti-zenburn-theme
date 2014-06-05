@@ -919,6 +919,12 @@
    ;; volatile-highlights
    `(vhl/default-face ((t (:background ,azenburn-bg-05))))
 
+   ;; elfeed
+   `(elfeed-search-date-face ((t (:foreground ,azenburn-dark-blue-1 :underline t
+                                              :weight bold))))
+   `(elfeed-search-tag-face ((t (:foreground ,azenburn-violet))))
+   `(elfeed-search-feed-face ((t (:foreground ,azenburn-bordeaux))))
+
    ;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,azenburn-dark-blue :underline t
 				 :weight bold))))
