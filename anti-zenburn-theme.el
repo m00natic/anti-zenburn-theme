@@ -117,14 +117,14 @@
      ((,class (:foreground ,azenburn-violet+1
 			   :background ,azenburn-bg-1
 			   :box (:line-width -1 :style released-button)))
-      (t :inverse-video t)))
+      (t (:inverse-video t))))
    `(mode-line-buffer-id ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,azenburn-violet-1
 		      :background ,azenburn-bg-05
 		      :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,azenburn-bg-1))
-	     (t :inverse-video t)))
+	     (t (:inverse-video t))))
    `(secondary-selection ((t (:background ,azenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,azenburn-blue))))
    `(vertical-border ((t (:foreground ,azenburn-fg))))
@@ -242,9 +242,9 @@
    `(diff-changed ((t (:foreground ,azenburn-dark-blue))))
    `(diff-removed ((,class (:foreground ,azenburn-blue :background nil))
 		   (t (:foreground ,azenburn-blue-3 :background nil))))
-   '(diff-refine-added ((t :inherit diff-added :weight bold)))
-   '(diff-refine-change ((t :inherit diff-changed :weight bold)))
-   '(diff-refine-removed ((t :inherit diff-removed :weight bold)))
+   '(diff-refine-added ((t (:inherit diff-added :weight bold))))
+   '(diff-refine-change ((t (:inherit diff-changed :weight bold))))
+   '(diff-refine-removed ((t (:inherit diff-removed :weight bold))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
 		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
@@ -258,7 +258,7 @@
    `(diff-hl-unknown ((,class (:foreground ,azenburn-dark-blue :background ,azenburn-bg-05))))
 
    ;; dim-autoload
-   `(dim-autoload-cookie-line ((t :foreground ,azenburn-bg+1)))
+   `(dim-autoload-cookie-line ((t (:foreground ,azenburn-bg+1))))
 
    ;; dired+
    `(diredp-display-msg ((t (:foreground ,azenburn-beige))))
@@ -518,13 +518,13 @@
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,azenburn-bg-05))
-		   (t :weight bold)))
+		   (t (:weight bold))))
    `(hl-line ((,class (:background ,azenburn-bg-05)) ; old emacsen
-	      (t :weight bold)))
+	      (t (:weight bold))))
 
    ;; hl-sexp
    `(hl-sexp-face ((,class (:background ,azenburn-bg+1))
-		   (t :weight bold)))
+		   (t (:weight bold))))
 
    ;; ido-mode
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -747,15 +747,15 @@
    `(outline-8 ((t (:foreground ,azenburn-beige-4))))
 
    ;; p4
-   '(p4-depot-added-face ((t :inherit diff-added)))
-   '(p4-depot-branch-op-face ((t :inherit diff-changed)))
-   '(p4-depot-deleted-face ((t :inherit diff-removed)))
-   '(p4-depot-unmapped-face ((t :inherit diff-changed)))
-   '(p4-diff-change-face ((t :inherit diff-changed)))
-   '(p4-diff-del-face ((t :inherit diff-removed)))
-   '(p4-diff-file-face ((t :inherit diff-file-header)))
-   '(p4-diff-head-face ((t :inherit diff-header)))
-   '(p4-diff-ins-face ((t :inherit diff-added)))
+   '(p4-depot-added-face ((t (:inherit diff-added))))
+   '(p4-depot-branch-op-face ((t (:inherit diff-changed))))
+   '(p4-depot-deleted-face ((t (:inherit diff-removed))))
+   '(p4-depot-unmapped-face ((t (:inherit diff-changed))))
+   '(p4-diff-change-face ((t (:inherit diff-changed))))
+   '(p4-diff-del-face ((t (:inherit diff-removed))))
+   '(p4-diff-file-face ((t (:inherit diff-file-header))))
+   '(p4-diff-head-face ((t (:inherit diff-header))))
+   '(p4-diff-ins-face ((t (:inherit diff-added))))
 
    ;; perspective
    `(persp-selected-face ((t (:foreground ,azenburn-dark-blue-2 :inherit mode-line))))
@@ -847,7 +847,7 @@
    `(sp-show-pair-match-face ((t (:background ,azenburn-bg+3 :weight bold))))
 
    ;; sml-mode-line
-   '(sml-modeline-end-face ((t :inherit default :width condensed)))
+   '(sml-modeline-end-face ((t (:inherit default :width condensed))))
 
    ;; SLIME
    `(slime-repl-output-face ((t (:foreground ,azenburn-blue))))
