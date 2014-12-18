@@ -6,4 +6,4 @@ the like.
 
 * Screenshots
 
-[[https://github.com/m00natic/anti-zenburn-theme/blob/master/anti-zenburn-snapshot.jpeg]]
+[[https://raw.githubusercontent.com/m00natic/anti-zenburn-theme/master/anti-zenburn-snapshot.jpeg]]
