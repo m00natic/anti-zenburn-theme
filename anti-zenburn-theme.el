@@ -515,6 +515,9 @@
    `(helm-moccur-buffer ((t (:foreground ,azenburn-bordeaux :background ,azenburn-bg))))
    `(helm-mu-contacts-address-face ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg))))
    `(helm-mu-contacts-name-face ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
+   ;; helm-swoop
+   `(helm-swoop-target-line-face ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
+   `(helm-swoop-target-word-face ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg+2 :weight bold))))
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,azenburn-bg-05))
@@ -567,7 +570,6 @@
    `(ledger-font-posting-account-cleared-face ((t (:foreground ,azenburn-fg))))
    `(ledger-font-posting-account-pending-face ((t (:foreground ,azenburn-light-blue))))
    `(ledger-font-posting-amount-face ((t (:foreground ,azenburn-light-blue))))
-   `(ledger-font-posting-account-pending-face ((t (:foreground ,azenburn-light-blue))))
    `(ledger-occur-narrowed-face ((t (:foreground ,azenburn-fg-1 :invisible t))))
    `(ledger-occur-xact-face ((t (:background ,azenburn-bg+1))))
    `(ledger-font-comment-face ((t (:foreground ,azenburn-violet))))
