@@ -99,6 +99,9 @@
    `(compilation-mode-line-fail ((t (:foreground ,azenburn-blue :weight bold))))
    `(compilation-mode-line-run ((t (:foreground ,azenburn-dark-blue :weight bold))))
 
+   ;;; completions
+   `(completions-annotations ((t (:foreground ,azenburn-fg-1))))
+
    ;;; grep
    `(grep-context-face ((t (:foreground ,azenburn-fg))))
    `(grep-error-face ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
@@ -214,6 +217,7 @@
 
    ;; company-mode
    `(company-tooltip ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
+   `(company-tooltip-annotation ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg+1))))
    `(company-tooltip-selection ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
    `(company-tooltip-mouse ((t (:background ,azenburn-bg-1))))
    `(company-tooltip-common ((t (:foreground ,azenburn-violet+2))))
