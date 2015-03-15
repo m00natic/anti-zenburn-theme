@@ -215,6 +215,16 @@
    `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
+   ;; circe
+   `(circe-hilight-nick-face ((t (:foreground ,azenburn-fg))))
+   `(circe-my-message-face ((t (:foreground ,azenburn-fg))))
+   `(circe-fool-face ((t (:foreground ,azenburn-blue+1))))
+   `(circe-topic-diff-removed-face ((t (:foreground ,azenburn-blue :weight bold))))
+   `(circe-originator-face ((t (:foreground ,azenburn-fg))))
+   `(circe-server-face ((t (:foreground ,azenburn-violet))))
+   `(circe-topic-diff-new-face ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(circe-prompt-face ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg :weight bold))))
+
    ;; company-mode
    `(company-tooltip ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg+1))))
@@ -584,6 +594,11 @@
 
    ;; linum-mode
    `(linum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
+
+   ;; lui
+   `(lui-time-stamp-face ((t (:foreground ,azenburn-beige-1))))
+   `(lui-hilight-face ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
+   `(lui-button-face ((t (:inherit hover-highlight))))
 
    ;; macrostep
    `(macrostep-gensym-1
