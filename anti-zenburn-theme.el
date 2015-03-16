@@ -216,7 +216,7 @@
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
    ;; circe
-   `(circe-hilight-nick-face ((t (:foreground ,azenburn-fg))))
+   `(circe-highlight-nick-face ((t (:foreground ,azenburn-bordeaux))))
    `(circe-my-message-face ((t (:foreground ,azenburn-fg))))
    `(circe-fool-face ((t (:foreground ,azenburn-blue+1))))
    `(circe-topic-diff-removed-face ((t (:foreground ,azenburn-blue :weight bold))))
