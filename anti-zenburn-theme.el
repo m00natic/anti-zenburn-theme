@@ -191,7 +191,7 @@
    `(font-latex-sectioning-5-face ((t (:foreground ,azenburn-blue :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,azenburn-dark-blue))))
    `(font-latex-italic-face ((t (:foreground ,azenburn-bordeaux :slant italic))))
-   `(font-latex-string-face ((t (:inherit ,font-lock-string-face))))
+   '(font-latex-string-face ((t (:inherit font-lock-string-face))))
    `(font-latex-math-face ((t (:foreground ,azenburn-light-blue))))
 
    ;; auto-complete
@@ -543,6 +543,13 @@
    `(hl-sexp-face ((,class (:background ,azenburn-bg+1))
 		   (t (:weight bold))))
 
+   ;; hydra
+   `(hydra-face-red ((t (:foreground ,azenburn-blue-1 :background ,azenburn-bg))))
+   `(hydra-face-amaranth ((t (:foreground ,azenburn-blue-3 :background ,azenburn-bg))))
+   `(hydra-face-blue ((t (:foreground ,azenburn-beige :background ,azenburn-bg))))
+   `(hydra-face-pink ((t (:foreground ,azenburn-green :background ,azenburn-bg))))
+   `(hydra-face-teal ((t (:foreground ,azenburn-bordeaux :background ,azenburn-bg))))
+
    ;; ido-mode
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(ido-only-match ((t (:foreground ,azenburn-light-blue :weight bold))))
@@ -805,6 +812,10 @@
    `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,azenburn-bg))))
    `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,azenburn-bg))))
    `(proof-warning-face ((t (:foreground ,azenburn-bg :background ,azenburn-dark-blue-1))))
+
+   ;; racket-mode
+   '(racket-keyword-argument-face ((t (:inherit font-lock-constant-face))))
+   '(racket-selfeval-face ((t (:inherit font-lock-type-face))))
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,azenburn-fg))))
