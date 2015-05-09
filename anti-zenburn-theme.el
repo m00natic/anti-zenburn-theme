@@ -179,6 +179,12 @@
    ;; anzu
    `(anzu-mode-line ((t (:foreground ,azenburn-bordeaux :weight bold))))
 
+   ;; avy
+   `(avy-background-face
+     ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
+   `(avy-lead-face
+     ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil))))
+
    ;; full-ack
    `(ack-separator ((t (:foreground ,azenburn-fg))))
    `(ack-file ((t (:foreground ,azenburn-beige))))
