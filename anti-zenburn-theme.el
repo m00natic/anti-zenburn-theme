@@ -182,6 +182,8 @@
    ;; avy
    `(avy-background-face
      ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
+   `(avy-lead-face-0
+     ((t (:foreground ,azenburn-violet+3 :background ,azenburn-bg :inverse-video nil))))
    `(avy-lead-face
      ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil))))
 
