@@ -82,6 +82,7 @@
    `(highlight ((t (:background ,azenburn-bg-05))))
    `(success ((t (:foreground ,azenburn-violet :weight bold))))
    `(warning ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(tooltip ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
 
    ;;; compilation
    `(compilation-column-face ((t (:foreground ,azenburn-dark-blue))))
