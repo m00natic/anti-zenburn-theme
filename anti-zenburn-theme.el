@@ -260,14 +260,12 @@
    `(ctbl:face-row-select ((t (:background ,azenburn-bordeaux :foreground ,azenburn-bg))))
 
    ;; diff
-   `(diff-added ((,class (:foreground ,azenburn-violet+4 :background nil))
-		 (t (:foreground ,azenburn-violet+1 :background nil))))
-   `(diff-changed ((t (:foreground ,azenburn-dark-blue))))
-   `(diff-removed ((,class (:foreground ,azenburn-blue :background nil))
-		   (t (:foreground ,azenburn-blue-3 :background nil))))
-   '(diff-refine-added ((t (:inherit diff-added :weight bold))))
-   '(diff-refine-change ((t (:inherit diff-changed :weight bold))))
-   '(diff-refine-removed ((t (:inherit diff-removed :weight bold))))
+   `(diff-added          ((t (:background "#CCAACC" :foreground ,azenburn-violet))))
+   `(diff-changed        ((t (:background "#AAAAEE" :foreground ,azenburn-dark-blue-1))))
+   `(diff-removed        ((t (:background "#AACCCC" :foreground ,azenburn-blue-2))))
+   `(diff-refine-added   ((t (:background "#CC77CC" :foreground ,azenburn-violet+4))))
+   `(diff-refine-change  ((t (:background "#7777EE" :foreground ,azenburn-dark-blue))))
+   `(diff-refine-removed ((t (:background "#77CCCC" :foreground ,azenburn-blue))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
 		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
@@ -412,6 +410,11 @@
    `(erc-timestamp-face ((t (:foreground ,azenburn-violet+4))))
    '(erc-underline-face ((t (:underline t))))
 
+   ;; git-commit
+   `(git-commit-comment-action  ((,class (:foreground ,azenburn-violet+1  :weight bold))))
+   `(git-commit-comment-branch  ((,class (:foreground ,azenburn-beige+1   :weight bold))))
+   `(git-commit-comment-heading ((,class (:foreground ,azenburn-dark-blue :weight bold))))
+
    ;; git-gutter
    `(git-gutter:added ((t (:foreground ,azenburn-violet :weight bold :inverse-video t))))
    `(git-gutter:deleted ((t (:foreground ,azenburn-blue :weight bold :inverse-video t))))
@@ -423,7 +426,7 @@
    `(git-gutter-fr:deleted ((t (:foreground ,azenburn-blue :weight bold))))
    `(git-gutter-fr:modified ((t (:foreground ,azenburn-green :weight bold))))
 
-   ;; git-rebase-mode
+   ;; git-rebase
    `(git-rebase-hash ((t (:foreground ,azenburn-light-blue))))
 
    ;; gnus
@@ -630,14 +633,82 @@
    '(macrostep-expansion-highlight-face ((t (:inherit highlight))))
    '(macrostep-macro-face ((t (:underline t))))
 
-   ;; magit
-   `(magit-item-highlight ((t (:background ,azenburn-bg+05))))
-   `(magit-section-title ((t (:foreground ,azenburn-dark-blue :weight bold))))
-   `(magit-process-ok ((t (:foreground ,azenburn-violet :weight bold))))
-   `(magit-process-ng ((t (:foreground ,azenburn-blue :weight bold))))
-   `(magit-branch ((t (:foreground ,azenburn-beige :weight bold))))
-   `(magit-log-author ((t (:foreground ,azenburn-light-blue))))
-   `(magit-log-sha1 ((t (:foreground ,azenburn-light-blue))))
+;;; magit
+   ;; headings and diffs
+   `(magit-section-highlight           ((t (:background ,azenburn-bg+05))))
+   `(magit-section-heading             ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(magit-section-heading-selection   ((t (:foreground ,azenburn-light-blue :weight bold))))
+   '(magit-diff-file-heading           ((t (:weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,azenburn-bg+05  :weight bold))))
+   `(magit-diff-file-heading-selection ((t (:background ,azenburn-bg+05
+                                            :foreground ,azenburn-light-blue :weight bold))))
+   `(magit-diff-hunk-heading           ((t (:background ,azenburn-bg+1))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,azenburn-bg+2))))
+   `(magit-diff-hunk-heading-selection ((t (:background ,azenburn-bg+2
+                                            :foreground ,azenburn-light-blue))))
+   `(magit-diff-lines-heading          ((t (:background ,azenburn-light-blue
+                                            :foreground ,azenburn-bg))))
+   `(magit-diff-context-highlight      ((t (:background ,azenburn-bg+05
+                                            :foreground "grey80"))))
+   `(magit-diffstat-added   ((t (:foreground ,azenburn-violet+4))))
+   `(magit-diffstat-removed ((t (:foreground ,azenburn-blue))))
+   ;; popup
+   `(magit-popup-heading             ((t (:foreground ,azenburn-dark-blue  :weight bold))))
+   `(magit-popup-key                 ((t (:foreground ,azenburn-violet-1 :weight bold))))
+   `(magit-popup-argument            ((t (:foreground ,azenburn-violet   :weight bold))))
+   `(magit-popup-disabled-argument   ((t (:foreground ,azenburn-fg-1    :weight normal))))
+   `(magit-popup-option-value        ((t (:foreground ,azenburn-beige-2  :weight bold))))
+   ;; process
+   `(magit-process-ok    ((t (:foreground ,azenburn-violet  :weight bold))))
+   `(magit-process-ng    ((t (:foreground ,azenburn-blue    :weight bold))))
+   ;; log
+   `(magit-log-author    ((t (:foreground ,azenburn-light-blue))))
+   `(magit-log-date      ((t (:foreground ,azenburn-fg-1))))
+   `(magit-log-graph     ((t (:foreground ,azenburn-fg+1))))
+   ;; sequence
+   `(magit-sequence-pick ((t (:foreground ,azenburn-dark-blue-2))))
+   `(magit-sequence-stop ((t (:foreground ,azenburn-violet))))
+   `(magit-sequence-part ((t (:foreground ,azenburn-dark-blue))))
+   `(magit-sequence-head ((t (:foreground ,azenburn-beige))))
+   `(magit-sequence-drop ((t (:foreground ,azenburn-blue))))
+   `(magit-sequence-done ((t (:foreground ,azenburn-fg-1))))
+   `(magit-sequence-onto ((t (:foreground ,azenburn-fg-1))))
+   ;; bisect
+   `(magit-bisect-good ((t (:foreground ,azenburn-violet))))
+   `(magit-bisect-skip ((t (:foreground ,azenburn-dark-blue))))
+   `(magit-bisect-bad  ((t (:foreground ,azenburn-blue))))
+   ;; blame
+   `(magit-blame-heading ((t (:background ,azenburn-bg-1 :foreground ,azenburn-beige-2))))
+   `(magit-blame-hash    ((t (:background ,azenburn-bg-1 :foreground ,azenburn-beige-2))))
+   `(magit-blame-name    ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue))))
+   `(magit-blame-date    ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue))))
+   `(magit-blame-summary ((t (:background ,azenburn-bg-1 :foreground ,azenburn-beige-2
+                                          :weight bold))))
+   ;; references etc
+   `(magit-dimmed         ((t (:foreground ,azenburn-bg+3))))
+   `(magit-hash           ((t (:foreground ,azenburn-bg+3))))
+   `(magit-tag            ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(magit-branch-remote  ((t (:foreground ,azenburn-violet  :weight bold))))
+   `(magit-branch-local   ((t (:foreground ,azenburn-beige   :weight bold))))
+   `(magit-branch-current ((t (:foreground ,azenburn-beige   :weight bold :box t))))
+   `(magit-head           ((t (:foreground ,azenburn-beige   :weight bold))))
+   `(magit-refname        ((t (:background ,azenburn-bg+2 :foreground ,azenburn-fg :weight bold))))
+   `(magit-refname-stash  ((t (:background ,azenburn-bg+2 :foreground ,azenburn-fg :weight bold))))
+   `(magit-refname-wip    ((t (:background ,azenburn-bg+2 :foreground ,azenburn-fg :weight bold))))
+   `(magit-signature-good      ((t (:foreground ,azenburn-violet))))
+   `(magit-signature-bad       ((t (:foreground ,azenburn-blue))))
+   `(magit-signature-untrusted ((t (:foreground ,azenburn-dark-blue))))
+   `(magit-cherry-unmatched    ((t (:foreground ,azenburn-bordeaux))))
+   `(magit-cherry-equivalent   ((t (:foreground ,azenburn-green))))
+   `(magit-reflog-commit       ((t (:foreground ,azenburn-violet))))
+   `(magit-reflog-amend        ((t (:foreground ,azenburn-green))))
+   `(magit-reflog-merge        ((t (:foreground ,azenburn-violet))))
+   `(magit-reflog-checkout     ((t (:foreground ,azenburn-beige))))
+   `(magit-reflog-reset        ((t (:foreground ,azenburn-blue))))
+   `(magit-reflog-rebase       ((t (:foreground ,azenburn-green))))
+   `(magit-reflog-cherry-pick  ((t (:foreground ,azenburn-violet))))
+   `(magit-reflog-remote       ((t (:foreground ,azenburn-bordeaux))))
+   `(magit-reflog-other        ((t (:foreground ,azenburn-bordeaux))))
 
    ;; egg
    `(egg-text-base ((t (:foreground ,azenburn-fg))))
