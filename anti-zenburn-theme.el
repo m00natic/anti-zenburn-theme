@@ -260,12 +260,12 @@
    `(ctbl:face-row-select ((t (:background ,azenburn-bordeaux :foreground ,azenburn-bg))))
 
 ;;; diff
-   `(diff-added          ((t (:background "#CCAACC" :foreground ,azenburn-violet))))
-   `(diff-changed        ((t (:background "#AAAAEE" :foreground ,azenburn-dark-blue-1))))
-   `(diff-removed        ((t (:background "#AACCCC" :foreground ,azenburn-blue-2))))
-   `(diff-refine-added   ((t (:background "#CC77CC" :foreground ,azenburn-violet+4))))
-   `(diff-refine-change  ((t (:background "#7777EE" :foreground ,azenburn-dark-blue))))
-   `(diff-refine-removed ((t (:background "#77CCCC" :foreground ,azenburn-blue))))
+   `(diff-added          ((t (:background ,azenburn-blue-4 :foreground ,azenburn-fg-1))))
+   `(diff-changed        ((t (:background ,azenburn-light-blue :foreground ,azenburn-fg))))
+   `(diff-removed        ((t (:background ,azenburn-violet-1 :foreground ,azenburn-fg+1))))
+   `(diff-refine-added   ((t (:background ,azenburn-green :foreground ,azenburn-fg-1))))
+   `(diff-refine-change  ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-fg))))
+   `(diff-refine-removed ((t (:background ,azenburn-violet+2 :foreground ,azenburn-fg+1))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
 		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
@@ -647,9 +647,9 @@
    `(magit-diff-hunk-heading-selection ((t (:background ,azenburn-bg+2
                                                         :foreground ,azenburn-light-blue))))
    `(magit-diff-lines-heading          ((t (:background ,azenburn-light-blue
-                                                        :foreground ,azenburn-bg))))
+                                                        :foreground ,azenburn-bg+2))))
    `(magit-diff-context-highlight      ((t (:background ,azenburn-bg+05
-                                                        :foreground "grey80"))))
+                                                        :foreground ,azenburn-bg+3))))
    `(magit-diffstat-added   ((t (:foreground ,azenburn-violet+4))))
    `(magit-diffstat-removed ((t (:foreground ,azenburn-blue))))
 ;;; popup
