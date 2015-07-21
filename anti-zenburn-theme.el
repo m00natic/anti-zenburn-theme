@@ -263,9 +263,9 @@
    `(diff-added          ((t (:background ,azenburn-blue-4 :foreground ,azenburn-fg))))
    `(diff-changed        ((t (:background ,azenburn-light-blue :foreground ,azenburn-fg))))
    `(diff-removed        ((t (:background ,azenburn-violet-1 :foreground ,azenburn-fg))))
-   `(diff-refine-added   ((t (:background ,azenburn-green :foreground ,azenburn-fg+1))))
-   `(diff-refine-change  ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-fg+1))))
-   `(diff-refine-removed ((t (:background ,azenburn-violet+2 :foreground ,azenburn-fg+1))))
+   `(diff-refine-added   ((t (:background ,azenburn-green :foreground ,azenburn-fg-1))))
+   `(diff-refine-change  ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-fg-1))))
+   `(diff-refine-removed ((t (:background ,azenburn-violet+2 :foreground ,azenburn-fg-1))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
 		  (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
