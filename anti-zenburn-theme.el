@@ -954,6 +954,26 @@
    `(show-paren-mismatch ((t (:foreground ,azenburn-blue+1 :background ,azenburn-bg+3 :weight bold))))
    `(show-paren-match ((t (:background ,azenburn-bg+3 :weight bold))))
 
+;;; smart-mode-line
+   ;; use (setq sml/theme nil) to enable anti-zenburn for sml
+   `(sml/global ((,class (:foreground ,azenburn-fg :weight bold))))
+   `(sml/modes ((,class (:foreground ,azenburn-dark-blue :weight bold))))
+   `(sml/minor-modes ((,class (:foreground ,azenburn-fg-1 :weight bold))))
+   `(sml/filename ((,class (:foreground ,azenburn-dark-blue :weight bold))))
+   `(sml/line-number ((,class (:foreground ,azenburn-beige :weight bold))))
+   `(sml/col-number ((,class (:foreground ,azenburn-beige+1 :weight bold))))
+   `(sml/position-percentage ((,class (:foreground ,azenburn-beige-1 :weight bold))))
+   `(sml/prefix ((,class (:foreground ,azenburn-light-blue))))
+   `(sml/git ((,class (:foreground ,azenburn-violet+3))))
+   `(sml/process ((,class (:weight bold))))
+   `(sml/sudo ((,class  (:foreground ,azenburn-light-blue :weight bold))))
+   `(sml/read-only ((,class (:foreground ,azenburn-blue-2))))
+   `(sml/outside-modified ((,class (:foreground ,azenburn-light-blue))))
+   `(sml/modified ((,class (:foreground ,azenburn-blue))))
+   `(sml/vc-edited ((,class (:foreground ,azenburn-violet+2))))
+   `(sml/charging ((,class (:foreground ,azenburn-violet+4))))
+   `(sml/discharging ((,class (:foreground ,azenburn-blue+1))))
+
 ;;; smartparens
    `(sp-show-pair-mismatch-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-blue+1 :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,azenburn-bg+3 :weight bold))))
