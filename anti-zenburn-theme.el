@@ -224,6 +224,9 @@
    `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
+;;; cider
+   `(cider-result-overlay-face ((t (:foreground ,azenburn-fg-1))))
+
 ;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,azenburn-bordeaux))))
    `(circe-my-message-face ((t (:foreground ,azenburn-fg))))
