@@ -225,7 +225,7 @@
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
 ;;; cider
-   `(cider-result-overlay-face ((t (:foreground ,azenburn-fg-1))))
+   `(cider-result-overlay-face ((t (:foreground ,azenburn-fg-1 :background unspecified))))
 
 ;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,azenburn-bordeaux))))
@@ -1160,6 +1160,12 @@
 
 ;;; fill-column-indicator
    `(fci-rule-color ,azenburn-bg-05)
+
+;;; nrepl-client
+   `(nrepl-message-colors
+     '(,azenburn-blue ,azenburn-light-blue ,azenburn-dark-blue
+                      ,azenburn-violet ,azenburn-violet+4
+                      ,azenburn-bordeaux ,azenburn-beige+1 ,azenburn-green))
 
 ;;; vc-annotate
    `(vc-annotate-color-map
