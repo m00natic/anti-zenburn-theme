@@ -203,6 +203,23 @@
    '(font-latex-string-face ((t (:inherit font-lock-string-face))))
    `(font-latex-math-face ((t (:foreground ,azenburn-light-blue))))
 
+;;; agda-mode
+   `(agda2-highlight-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(agda2-highlight-string-face ((t (:foreground ,azenburn-blue))))
+   `(agda2-highlight-symbol-face ((t (:foreground ,azenburn-light-blue))))
+   `(agda2-highlight-primitive-type-face ((t (:foreground ,azenburn-beige-1))))
+   `(agda2-highlight-inductive-constructor-face ((t (:foreground ,azenburn-fg))))
+   `(agda2-highlight-coinductive-constructor-face ((t (:foreground ,azenburn-fg))))
+   `(agda2-highlight-datatype-face ((t (:foreground ,azenburn-beige))))
+   `(agda2-highlight-function-face ((t (:foreground ,azenburn-beige))))
+   `(agda2-highlight-module-face ((t (:foreground ,azenburn-beige-1))))
+   `(agda2-highlight-error-face ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(agda2-highlight-unsolved-meta-face ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(agda2-highlight-unsolved-constraint-face ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(agda2-highlight-termination-problem-face ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(agda2-highlight-incomplete-pattern-face ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(agda2-highlight-typechecks-face ((t (:background ,azenburn-blue-4))))
+
 ;;; auto-complete
    `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-bg-2))))
    `(ac-selection-face ((t (:background ,azenburn-beige-4 :foreground ,azenburn-fg))))
@@ -253,6 +270,18 @@
    `(clojure-test-failure-face ((t (:foreground ,azenburn-light-blue :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,azenburn-blue :weight bold :underline t))))
    `(clojure-test-success-face ((t (:foreground ,azenburn-violet+1 :weight bold :underline t))))
+
+;;; context-coloring
+   `(context-coloring-level-0-face ((t :foreground ,azenburn-fg)))
+   `(context-coloring-level-1-face ((t :foreground ,azenburn-bordeaux)))
+   `(context-coloring-level-2-face ((t :foreground ,azenburn-violet+4)))
+   `(context-coloring-level-3-face ((t :foreground ,azenburn-dark-blue)))
+   `(context-coloring-level-4-face ((t :foreground ,azenburn-light-blue)))
+   `(context-coloring-level-5-face ((t :foreground ,azenburn-green)))
+   `(context-coloring-level-6-face ((t :foreground ,azenburn-beige+1)))
+   `(context-coloring-level-7-face ((t :foreground ,azenburn-violet+2)))
+   `(context-coloring-level-8-face ((t :foreground ,azenburn-dark-blue-2)))
+   `(context-coloring-level-9-face ((t :foreground ,azenburn-blue+1)))
 
 ;;; coq
    '(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
