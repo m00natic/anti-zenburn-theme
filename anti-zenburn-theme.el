@@ -594,6 +594,17 @@
    `(hydra-face-pink ((t (:foreground ,azenburn-green :background ,azenburn-bg))))
    `(hydra-face-teal ((t (:foreground ,azenburn-bordeaux :background ,azenburn-bg))))
 
+;;; ivy
+   `(ivy-confirm-face ((t (:foreground ,azenburn-violet :background ,azenburn-bg))))
+   `(ivy-match-required-face ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
+   `(ivy-remote ((t (:foreground ,azenburn-beige :background ,azenburn-bg))))
+   `(ivy-subdir ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg))))
+   `(ivy-current-match ((t (:foreground ,azenburn-dark-blue :weight bold :underline t))))
+   `(ivy-minibuffer-match-face-1 ((t (:background ,azenburn-bg+1))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,azenburn-violet-1))))
+   `(ivy-minibuffer-match-face-3 ((t (:background ,azenburn-violet))))
+   `(ivy-minibuffer-match-face-4 ((t (:background ,azenburn-violet+1))))
+
 ;;; ido-mode
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(ido-only-match ((t (:foreground ,azenburn-light-blue :weight bold))))
@@ -645,6 +656,15 @@
 
 ;;; linum-mode
    `(linum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
+
+;;; ruler-mode
+   `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,azenburn-fg))))
+   `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,azenburn-dark-blue))))
+   `(ruler-mode-goal-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-comment-column ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
+   `(ruler-mode-current-column ((t (:foreground ,azenburn-dark-blue :box t))))
+   `(ruler-mode-default ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
 
 ;;; lui
    `(lui-time-stamp-face ((t (:foreground ,azenburn-beige-1))))
