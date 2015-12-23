@@ -904,6 +904,14 @@
    `(org-mode-line-clock-overrun ((t (:foreground ,azenburn-bg :background ,azenburn-blue-1))))
    `(org-ellipsis ((t (:foreground ,azenburn-dark-blue-1 :underline t))))
    `(org-footnote ((t (:foreground ,azenburn-bordeaux :underline t))))
+   `(org-habit-ready-face ((t :background ,azenburn-violet)))
+   `(org-habit-alert-face ((t :background ,azenburn-dark-blue-1 :foreground ,azenburn-bg)))
+   `(org-habit-clear-face ((t :background ,azenburn-beige-3)))
+   `(org-habit-overdue-face ((t :background ,azenburn-blue-3)))
+   `(org-habit-clear-future-face ((t :background ,azenburn-beige-4)))
+   `(org-habit-ready-future-face ((t :background ,azenburn-violet-1)))
+   `(org-habit-alert-future-face ((t :background ,azenburn-dark-blue-2 :foreground ,azenburn-bg)))
+   `(org-habit-overdue-future-face ((t :background ,azenburn-blue-4)))
 
 ;;; outline
    `(outline-1 ((t (:foreground ,azenburn-light-blue))))
