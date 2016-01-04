@@ -257,6 +257,7 @@
 ;;; company-mode
    `(company-tooltip ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg+1))))
+   `(company-tooltip-annotation-selection ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg-1))))
    `(company-tooltip-selection ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
    `(company-tooltip-mouse ((t (:background ,azenburn-bg-1))))
    `(company-tooltip-common ((t (:foreground ,azenburn-violet+2))))
