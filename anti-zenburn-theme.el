@@ -576,6 +576,7 @@
    `(helm-grep-lineno ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg))))
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
    `(helm-grep-running ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
+   `(helm-match ((t (:foreground ,azenburn-light-blue :background ,azenburn-bg-1 :weight bold))))
    `(helm-moccur-buffer ((t (:foreground ,azenburn-bordeaux :background ,azenburn-bg))))
    `(helm-mu-contacts-address-face ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg))))
    `(helm-mu-contacts-name-face ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
