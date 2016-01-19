@@ -1213,6 +1213,14 @@
 ;;; which-func-mode
    `(which-func ((t (:foreground ,azenburn-violet+4))))
 
+;;; xcscope
+   `(cscope-file-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(cscope-function-face ((t (:foreground ,azenburn-bordeaux :weight bold))))
+   `(cscope-line-number-face ((t (:foreground ,azenburn-blue :weight bold))))
+   `(cscope-mouse-face ((t (:foreground ,azenburn-bg :background ,azenburn-beige+1))))
+   `(cscope-separator-face ((t (:foreground ,azenburn-blue :weight bold
+                                            :underline t :overline t))))
+
 ;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,azenburn-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,azenburn-bg-1 :foreground ,azenburn-bg-1))))
