@@ -184,9 +184,13 @@
    `(avy-background-face
      ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,azenburn-violet+3 :background ,azenburn-bg :inverse-video nil))))
+     ((t (:foreground ,azenburn-violet+3 :background ,azenburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-1
+     ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg :inverse-video nil :weight bold))))
+   `(avy-lead-face-2
+     ((t (:foreground ,azenburn-blue+1 :background ,azenburn-bg :inverse-video nil :weight bold))))
    `(avy-lead-face
-     ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil))))
+     ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg :inverse-video nil :weight bold))))
 
 ;;; full-ack
    `(ack-separator ((t (:foreground ,azenburn-fg))))
