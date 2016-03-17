@@ -908,6 +908,8 @@
    `(org-mode-line-clock-overrun ((t (:foreground ,azenburn-bg :background ,azenburn-blue-1))))
    `(org-ellipsis ((t (:foreground ,azenburn-dark-blue-1 :underline t))))
    `(org-footnote ((t (:foreground ,azenburn-bordeaux :underline t))))
+   `(org-document-title ((t (:foreground ,azenburn-beige))))
+   `(org-document-info ((t (:foreground ,azenburn-beige))))
    `(org-habit-ready-face ((t :background ,azenburn-violet)))
    `(org-habit-alert-face ((t :background ,azenburn-dark-blue-1 :foreground ,azenburn-bg)))
    `(org-habit-clear-face ((t :background ,azenburn-beige-3)))
