@@ -630,8 +630,17 @@
    `(js2-jsdoc-tag ((t (:foreground ,azenburn-violet-1))))
    `(js2-jsdoc-type ((t (:foreground ,azenburn-violet+2))))
    `(js2-jsdoc-value ((t (:foreground ,azenburn-violet+3))))
-   `(js2-function-param ((t (:foreground ,azenburn-violet+3))))
+   `(js2-function-param ((t (:foreground ,azenburn-light-blue))))
    `(js2-external-variable ((t (:foreground ,azenburn-light-blue))))
+   `(js2-instance-member ((t (:foreground ,azenburn-violet-1))))
+   `(js2-jsdoc-html-tag-delimiter ((t (:foreground ,azenburn-light-blue))))
+   `(js2-jsdoc-html-tag-name ((t (:foreground ,azenburn-blue-1))))
+   `(js2-object-property ((t (:foreground ,azenburn-beige+1))))
+   `(js2-magic-paren ((t (:foreground ,azenburn-beige-5))))
+   `(js2-private-function-call ((t (:foreground ,azenburn-bordeaux))))
+   `(js2-function-call ((t (:foreground ,azenburn-bordeaux))))
+   `(js2-private-member ((t (:foreground ,azenburn-beige-1))))
+   `(js2-keywords ((t (:foreground ,azenburn-green))))
 
 ;;; jabber-mode
    `(jabber-roster-user-away ((t (:foreground ,azenburn-violet+2))))
