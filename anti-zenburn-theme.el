@@ -247,6 +247,14 @@
 
 ;;; cider
    `(cider-result-overlay-face ((t (:foreground ,azenburn-fg-1 :background unspecified))))
+   `(cider-enlightened-face ((t (:box (:color ,azenburn-light-blue :line-width -1)))))
+   `(cider-enlightened-local-face ((t (:weight bold :foreground ,azenburn-violet+1))))
+   `(cider-deprecated-face ((t (:background ,azenburn-dark-blue-2))))
+   `(cider-instrumented-face ((t (:box (:color ,azenburn-blue :line-width -1)))))
+   `(cider-traced-face ((t (:box (:color ,azenburn-bordeaux :line-width -1)))))
+   `(cider-test-failure-face ((t (:background ,azenburn-blue-4))))
+   `(cider-test-error-face ((t (:background ,azenburn-green))))
+   `(cider-test-success-face ((t (:background ,azenburn-violet-1))))
 
 ;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,azenburn-bordeaux))))
