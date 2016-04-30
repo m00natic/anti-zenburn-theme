@@ -361,6 +361,7 @@
    `(diredp-write-priv ((t (:foreground ,azenburn-green))))
 
 ;;; dired-async
+   `(dired-async-failures ((t (:foreground ,azenburn-blue :weight bold))))
    `(dired-async-message ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(dired-async-mode-message ((t (:foreground ,azenburn-dark-blue))))
 
