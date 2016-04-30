@@ -179,6 +179,10 @@
 
 ;;; anzu
    `(anzu-mode-line ((t (:foreground ,azenburn-bordeaux :weight bold))))
+   `(anzu-match-1 ((t (:foreground ,azenburn-bg :background ,azenburn-violet))))
+   `(anzu-match-2 ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
+   `(anzu-match-3 ((t (:foreground ,azenburn-bg :background ,azenburn-beige))))
+   `(anzu-replace-to ((t (:inherit anzu-replace-highlight :foreground ,azenburn-dark-blue))))
 
 ;;; avy
    `(avy-background-face
@@ -231,6 +235,11 @@
    `(popup-scroll-bar-foreground-face ((t (:background ,azenburn-beige-5))))
    `(popup-scroll-bar-background-face ((t (:background ,azenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,azenburn-bg :foreground ,azenburn-fg))))
+
+;;; ace-window
+   `(aw-background-face
+     ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
+   `(aw-leading-char-face ((t (:inherit aw-mode-line-face))))
 
 ;;; android mode
    `(android-mode-debug-face ((t (:foreground ,azenburn-violet+1))))
@@ -350,6 +359,10 @@
    `(diredp-read-priv ((t (:foreground ,azenburn-violet-1))))
    `(diredp-symlink ((t (:foreground ,azenburn-dark-blue))))
    `(diredp-write-priv ((t (:foreground ,azenburn-green))))
+
+;;; dired-async
+   `(dired-async-message ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(dired-async-mode-message ((t (:foreground ,azenburn-dark-blue))))
 
 ;;; ediff
    `(ediff-current-diff-A ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
@@ -687,6 +700,11 @@
 
 ;;; linum-mode
    `(linum ((t (:foreground ,azenburn-violet+2 :background ,azenburn-bg))))
+
+;;; lispy
+   `(lispy-command-name-face ((t (:background ,azenburn-bg-05 :inherit font-lock-function-name-face))))
+   `(lispy-cursor-face ((t (:foreground ,azenburn-bg :background ,azenburn-fg))))
+   `(lispy-face-hint ((t (:inherit highlight :foreground ,azenburn-dark-blue))))
 
 ;;; ruler-mode
    `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,azenburn-fg))))
