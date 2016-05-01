@@ -1163,6 +1163,10 @@
    `(vhl/default-face ((t (:background ,azenburn-bg-05))))
 
 ;;; elfeed
+   `(elfeed-log-error-level-face ((t (:foreground ,azenburn-blue))))
+   `(elfeed-log-info-level-face ((t (:foreground ,azenburn-beige))))
+   `(elfeed-log-warn-level-face ((t (:foreground ,azenburn-dark-blue))))
+
    `(elfeed-search-date-face ((t (:foreground ,azenburn-dark-blue-1 :underline t
                                               :weight bold))))
    `(elfeed-search-tag-face ((t (:foreground ,azenburn-violet))))
