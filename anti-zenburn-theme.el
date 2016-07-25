@@ -1287,6 +1287,9 @@
                       ,azenburn-violet ,azenburn-violet+4
                       ,azenburn-bordeaux ,azenburn-beige+1 ,azenburn-green))
 
+;;; pdf-tools
+   `(pdf-view-midnight-colors '(,azenburn-fg . ,azenburn-bg-05))
+
 ;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,azenburn-blue-1)
