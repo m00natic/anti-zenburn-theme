@@ -103,12 +103,25 @@
    ;;; completions
    `(completions-annotations ((t (:foreground ,azenburn-fg-1))))
 
+;;; eww
+   '(eww-invalid-certificate ((t (:inherit error))))
+   '(eww-valid-certificate   ((t (:inherit success))))
+
    ;;; grep
    `(grep-context-face ((t (:foreground ,azenburn-fg))))
    `(grep-error-face ((t (:foreground ,azenburn-blue-1 :weight bold :underline t))))
    `(grep-hit-face ((t (:foreground ,azenburn-beige))))
    `(grep-match-face ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(match ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue :weight bold))))
+
+;;; hi-lock
+   `(hi-blue    ((t (:background ,azenburn-bordeaux    :foreground ,azenburn-bg-1))))
+   `(hi-green   ((t (:background ,azenburn-violet+4 :foreground ,azenburn-bg-1))))
+   `(hi-pink    ((t (:background ,azenburn-green :foreground ,azenburn-bg-1))))
+   `(hi-yellow  ((t (:background ,azenburn-dark-blue  :foreground ,azenburn-bg-1))))
+   `(hi-blue-b  ((t (:foreground ,azenburn-beige    :weight     bold))))
+   `(hi-green-b ((t (:foreground ,azenburn-violet+2 :weight     bold))))
+   `(hi-red-b   ((t (:foreground ,azenburn-blue     :weight     bold))))
 
 ;;; info
    `(Info-quoted ((t (:inherit font-lock-constant-face))))
@@ -155,6 +168,10 @@
 
    '(c-annotation-face ((t (:inherit font-lock-constant-face))))
 
+;;; man
+   '(Man-overstrike ((t (:inherit font-lock-keyword-face))))
+   '(Man-underline  ((t (:inherit (font-lock-string-face underline)))))
+
    ;;; newsticker
    `(newsticker-date-face ((t (:foreground ,azenburn-fg))))
    `(newsticker-default-face ((t (:foreground ,azenburn-fg))))
@@ -174,7 +191,11 @@
    `(newsticker-treeview-old-face ((t (:foreground ,azenburn-bg+3))))
    `(newsticker-treeview-selection-face ((t (:background ,azenburn-bg-1 :foreground ,azenburn-dark-blue))))
 
-   ;;; external
+;;; woman
+   '(woman-bold   ((t (:inherit font-lock-keyword-face))))
+   '(woman-italic ((t (:inherit (font-lock-string-face italic)))))
+
+;;;; external
    `(ace-jump-face-background
      ((t (:foreground ,azenburn-fg-1 :background ,azenburn-bg :inverse-video nil))))
    `(ace-jump-face-foreground
@@ -214,6 +235,7 @@
    `(font-latex-italic-face ((t (:foreground ,azenburn-bordeaux :slant italic))))
    '(font-latex-string-face ((t (:inherit font-lock-string-face))))
    `(font-latex-math-face ((t (:foreground ,azenburn-light-blue))))
+   `(font-latex-script-char-face ((t (:foreground ,azenburn-light-blue))))
 
 ;;; agda-mode
    `(agda2-highlight-keyword-face ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -290,6 +312,7 @@
    `(cider-test-failure-face ((t (:background ,azenburn-blue-4))))
    `(cider-test-error-face ((t (:background ,azenburn-green))))
    `(cider-test-success-face ((t (:background ,azenburn-violet-1))))
+   `(cider-fringe-good-face ((t (:foreground ,azenburn-violet+4))))
 
 ;;; circe
    `(circe-highlight-nick-face ((t (:foreground ,azenburn-bordeaux))))
@@ -505,9 +528,15 @@
    `(erc-timestamp-face ((t (:foreground ,azenburn-violet+4))))
    '(erc-underline-face ((t (:underline t))))
 
+;;; git-annex
+   '(git-annex-dired-annexed-available ((t (:inherit success :weight normal))))
+   '(git-annex-dired-annexed-unavailable ((t (:inherit error :weight normal))))
+
 ;;; git-commit
    `(git-commit-comment-action  ((,class (:foreground ,azenburn-violet+1  :weight bold))))
-   `(git-commit-comment-branch  ((,class (:foreground ,azenburn-beige+1   :weight bold))))
+   `(git-commit-comment-branch  ((,class (:foreground ,azenburn-beige+1   :weight bold)))) ; obsolete
+   `(git-commit-comment-branch-local  ((,class (:foreground ,azenburn-beige+1  :weight bold))))
+   `(git-commit-comment-branch-remote ((,class (:foreground ,azenburn-violet  :weight bold))))
    `(git-commit-comment-heading ((,class (:foreground ,azenburn-dark-blue :weight bold))))
 
 ;;; git-gutter
@@ -590,11 +619,19 @@
    `(gnus-group-news-low-empty ((t (:foreground ,azenburn-bg+2))))
    `(gnus-signature ((t (:foreground ,azenburn-dark-blue))))
    `(gnus-x ((t (:background ,azenburn-fg :foreground ,azenburn-bg))))
+   `(mm-uu-extract ((t (:background ,azenburn-bg-05 :foreground ,azenburn-violet+1))))
+
+;;; go-guru
+   `(go-guru-hl-identifier-face ((t (:foreground ,azenburn-bg-1 :background ,azenburn-violet+1))))
 
 ;;; guide-key
    `(guide-key/highlight-command-face ((t (:foreground ,azenburn-beige))))
    `(guide-key/key-face ((t (:foreground ,azenburn-violet))))
    `(guide-key/prefix-command-face ((t (:foreground ,azenburn-violet+1))))
+
+;;; hackernews
+   '(hackernews-comment-count ((t (:inherit link-visited :underline nil))))
+   '(hackernews-link          ((t (:inherit link         :underline nil))))
 
 ;;; helm
    `(helm-header
@@ -694,14 +731,15 @@
 
 ;;; ivy
    `(ivy-confirm-face ((t (:foreground ,azenburn-violet :background ,azenburn-bg))))
-   `(ivy-match-required-face ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
-   `(ivy-remote ((t (:foreground ,azenburn-beige :background ,azenburn-bg))))
-   `(ivy-subdir ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg))))
    `(ivy-current-match ((t (:foreground ,azenburn-dark-blue :weight bold :underline t))))
+   `(ivy-cursor ((t (:foreground ,azenburn-bg :background ,azenburn-fg))))
+   `(ivy-match-required-face ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,azenburn-bg+1))))
    `(ivy-minibuffer-match-face-2 ((t (:background ,azenburn-violet-1))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,azenburn-violet))))
    `(ivy-minibuffer-match-face-4 ((t (:background ,azenburn-violet+1))))
+   `(ivy-remote ((t (:foreground ,azenburn-beige :background ,azenburn-bg))))
+   `(ivy-subdir ((t (:foreground ,azenburn-dark-blue :background ,azenburn-bg))))
 
 ;;; ido-mode
    `(ido-first-match ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -810,6 +848,10 @@
    `(magit-section-highlight           ((t (:background ,azenburn-bg+05))))
    `(magit-section-heading             ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,azenburn-light-blue :weight bold))))
+   `(magit-diff-added-highlight ((t (:background ,azenburn-violet))))
+   `(magit-diff-removed-highlight ((t (:background ,azenburn-blue-3))))
+   `(magit-diff-added ((t (:background ,azenburn-violet-1))))
+   `(magit-diff-removed ((t (:background ,azenburn-blue-4))))
    '(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,azenburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,azenburn-bg+05
@@ -870,6 +912,9 @@
    `(magit-signature-good      ((t (:foreground ,azenburn-violet))))
    `(magit-signature-bad       ((t (:foreground ,azenburn-blue))))
    `(magit-signature-untrusted ((t (:foreground ,azenburn-dark-blue))))
+   `(magit-signature-expired   ((t (:foreground ,azenburn-light-blue))))
+   `(magit-signature-revoked   ((t (:foreground ,azenburn-green))))
+   '(magit-signature-error     ((t (:inherit    magit-signature-bad))))
    `(magit-cherry-unmatched    ((t (:foreground ,azenburn-bordeaux))))
    `(magit-cherry-equivalent   ((t (:foreground ,azenburn-green))))
    `(magit-reflog-commit       ((t (:foreground ,azenburn-violet))))
@@ -959,6 +1004,17 @@
    `(nav-face-hdir ((t (:foreground ,azenburn-blue))))
    `(nav-face-file ((t (:foreground ,azenburn-fg))))
    `(nav-face-hfile ((t (:foreground ,azenburn-blue-4))))
+
+;;; merlin
+   `(merlin-type-face ((t (:inherit highlight))))
+   `(merlin-compilation-warning-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-light-blue)))
+      (t (:underline ,azenburn-light-blue))))
+   `(merlin-compilation-error-face
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,azenburn-blue)))
+      (t (:underline ,azenburn-blue))))
 
 ;;; mu4e
    `(mu4e-cited-1-face ((t (:foreground ,azenburn-beige    :slant italic))))
@@ -1068,6 +1124,11 @@
    '(p4-diff-head-face ((t (:inherit diff-header))))
    '(p4-diff-ins-face ((t (:inherit diff-added))))
 
+;;; c/perl
+   `(cperl-nonoverridable-face ((t (:foreground ,azenburn-green))))
+   `(cperl-array-face ((t (:foreground ,azenburn-dark-blue, :backgorund ,azenburn-bg))))
+   `(cperl-hash-face ((t (:foreground ,azenburn-dark-blue-1, :background ,azenburn-bg))))
+
 ;;; perspective
    `(persp-selected-face ((t (:foreground ,azenburn-dark-blue-2 :inherit mode-line))))
 
@@ -1135,6 +1196,17 @@
    `(reb-match-1 ((t (:foreground ,azenburn-bg :background ,azenburn-beige))))
    `(reb-match-2 ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
    `(reb-match-3 ((t (:foreground ,azenburn-bg :background ,azenburn-blue))))
+
+;;; realgud
+   `(realgud-overlay-arrow1 ((t (:foreground ,azenburn-violet))))
+   `(realgud-overlay-arrow2 ((t (:foreground ,azenburn-dark-blue))))
+   `(realgud-overlay-arrow3 ((t (:foreground ,azenburn-light-blue))))
+   `(realgud-bp-enabled-face ((t (:inherit error))))
+   `(realgud-bp-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-bp-line-enabled-face ((t (:box (:color ,azenburn-blue :style nil)))))
+   `(realgud-bp-line-disabled-face ((t (:box (:color "grey70" :style nil)))))
+   `(realgud-line-number ((t (:foreground ,azenburn-dark-blue))))
+   `(realgud-backtrace-number ((t (:foreground ,azenburn-dark-blue, :weight bold))))
 
 ;;; regex-tool
    `(regex-tool-matched-face ((t (:background ,azenburn-beige-4 :weight bold))))
@@ -1222,6 +1294,21 @@
    `(speedbar-selected-face ((t (:foreground ,azenburn-blue))))
    `(speedbar-separator-face ((t (:foreground ,azenburn-bg :background ,azenburn-beige-1))))
    `(speedbar-tag-face ((t (:foreground ,azenburn-dark-blue))))
+
+;;; sx
+   `(sx-custom-button
+     ((t (:background ,azenburn-fg :foreground ,azenburn-bg-1
+                      :box (:line-width 3 :style released-button) :height 0.9))))
+   `(sx-question-list-answers
+     ((t (:foreground ,azenburn-violet+3
+                      :height 1.0 :inherit sx-question-list-parent))))
+   `(sx-question-mode-accepted
+     ((t (:foreground ,azenburn-violet+3
+                      :height 1.3 :inherit sx-question-mode-title))))
+   '(sx-question-mode-content-face ((t (:inherit highlight))))
+   `(sx-question-mode-kbd-tag
+     ((t (:box (:color ,azenburn-bg-1 :line-width 3 :style released-button)
+               :height 0.9 :weight semi-bold))))
 
 ;;; tabbar
    `(tabbar-button ((t (:foreground ,azenburn-fg
@@ -1386,6 +1473,10 @@
                                            ,azenburn-dark-blue ,azenburn-beige
                                            ,azenburn-green ,azenburn-bordeaux
                                            ,azenburn-fg])
+
+;;; company-quickhelp
+   `(company-quickhelp-color-background ,azenburn-bg+1)
+   `(company-quickhelp-color-foreground ,azenburn-fg)
 
 ;;; fill-column-indicator
    `(fci-rule-color ,azenburn-bg-05)
