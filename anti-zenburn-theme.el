@@ -2,7 +2,7 @@
 
 ;; Author: Andrey Kotlarski <m00naticus@gmail.com>
 ;; URL: https://github.com/m00natic/anti-zenburn-theme
-;; Version: 2.4
+;; Version: 2.5
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -74,7 +74,7 @@
    ;;; basic coloring
    `(default ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
    `(cursor ((t (:foreground ,azenburn-fg :background ,azenburn-fg+1))))
-   `(escape-glyph ((t (:foreground ,azenburn-dark-blue :bold t))))
+   `(escape-glyph ((t (:foreground ,azenburn-dark-blue :weigth bold))))
    `(fringe ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(header-line ((t (:foreground ,azenburn-dark-blue
                                   :background ,azenburn-bg-1
@@ -109,6 +109,9 @@
    `(grep-hit-face ((t (:foreground ,azenburn-beige))))
    `(grep-match-face ((t (:foreground ,azenburn-light-blue :weight bold))))
    `(match ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue :weight bold))))
+
+;;; info
+   `(Info-quoted ((t (:inherit font-lock-constant-face))))
 
 ;;; faces used by isearch
    `(isearch ((t (:foreground ,azenburn-dark-blue-2 :weight bold :background ,azenburn-bg+2))))
@@ -179,6 +182,7 @@
 
 ;;; anzu
    `(anzu-mode-line ((t (:foreground ,azenburn-bordeaux :weight bold))))
+   `(anzu-mode-line-no-match ((t (:foreground ,azenburn-blue :weight bold))))
    `(anzu-match-1 ((t (:foreground ,azenburn-bg :background ,azenburn-violet))))
    `(anzu-match-2 ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
    `(anzu-match-3 ((t (:foreground ,azenburn-bg :background ,azenburn-beige))))
@@ -232,6 +236,8 @@
    `(ac-candidate-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-bg-2))))
    `(ac-selection-face ((t (:background ,azenburn-beige-4 :foreground ,azenburn-fg))))
    `(popup-tip-face ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-bg-2))))
+   `(popup-menu-mouse-face ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-bg-2))))
+   `(popup-summary-face ((t (:background ,azenburn-bg+3 :foreground ,azenburn-bg-2))))
    `(popup-scroll-bar-foreground-face ((t (:background ,azenburn-beige-5))))
    `(popup-scroll-bar-background-face ((t (:background ,azenburn-bg-1))))
    `(popup-isearch-match ((t (:background ,azenburn-bg :foreground ,azenburn-fg))))
@@ -254,8 +260,28 @@
    `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
    `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
 
+;;; calfw
+   `(cfw:face-annotation ((t (:foreground ,azenburn-blue :inherit cfw:face-day-title))))
+   `(cfw:face-day-title ((t nil)))
+   `(cfw:face-default-content ((t (:foreground ,azenburn-violet))))
+   `(cfw:face-default-day ((t (:weight bold))))
+   `(cfw:face-disable ((t (:foreground ,azenburn-fg-1))))
+   `(cfw:face-grid ((t (:inherit shadow))))
+   `(cfw:face-header ((t (:inherit font-lock-keyword-face))))
+   `(cfw:face-holiday ((t (:inherit cfw:face-sunday))))
+   `(cfw:face-periods ((t (:foreground ,azenburn-bordeaux))))
+   `(cfw:face-saturday ((t (:foreground ,azenburn-beige :weight bold))))
+   `(cfw:face-select ((t (:background ,azenburn-beige-5))))
+   `(cfw:face-sunday ((t (:foreground ,azenburn-blue :weight bold))))
+   `(cfw:face-title ((t (:height 2.0 :inherit (variable-pitch font-lock-keyword-face)))))
+   `(cfw:face-today ((t (:foreground ,azenburn-bordeaux :weight bold))))
+   `(cfw:face-today-title ((t (:inherit highlight bold))))
+   `(cfw:face-toolbar ((t (:background ,azenburn-beige-5))))
+   `(cfw:face-toolbar-button-off ((t (:underline nil :inherit link))))
+   `(cfw:face-toolbar-button-on ((t (:underline nil :inherit link-visited))))
+
 ;;; cider
-   `(cider-result-overlay-face ((t (:foreground ,azenburn-fg-1 :background unspecified))))
+   `(cider-result-overlay-face ((t (:background unspecified))))
    `(cider-enlightened-face ((t (:box (:color ,azenburn-light-blue :line-width -1)))))
    `(cider-enlightened-local-face ((t (:weight bold :foreground ,azenburn-violet+1))))
    `(cider-deprecated-face ((t (:background ,azenburn-dark-blue-2))))
@@ -313,6 +339,14 @@
    `(ctbl:face-continue-bar ((t (:background ,azenburn-bg-05 :foreground ,azenburn-bg))))
    `(ctbl:face-row-select ((t (:background ,azenburn-bordeaux :foreground ,azenburn-bg))))
 
+;;; debbugs
+   `(debbugs-gnu-done ((t (:foreground ,azenburn-fg-1))))
+   `(debbugs-gnu-handled ((t (:foreground ,azenburn-violet))))
+   `(debbugs-gnu-new ((t (:foreground ,azenburn-blue))))
+   `(debbugs-gnu-pending ((t (:foreground ,azenburn-beige))))
+   `(debbugs-gnu-stale ((t (:foreground ,azenburn-light-blue))))
+   `(debbugs-gnu-tagged ((t (:foreground ,azenburn-blue))))
+
 ;;; diff
    `(diff-added          ((t (:background ,azenburn-blue-4 :foreground ,azenburn-fg))))
    `(diff-changed        ((t (:background ,azenburn-light-blue :foreground ,azenburn-fg))))
@@ -323,8 +357,8 @@
    `(diff-header ((,class (:background ,azenburn-bg+2))
                   (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
-     ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :bold t))
-      (t (:background ,azenburn-fg :foreground ,azenburn-bg :bold t))))
+     ((,class (:background ,azenburn-bg+2 :foreground ,azenburn-fg :weigth bold))
+      (t (:background ,azenburn-fg :foreground ,azenburn-bg :weigth bold))))
 
 ;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,azenburn-beige :background ,azenburn-beige-2))))
@@ -382,6 +416,9 @@
    `(ediff-odd-diff-Ancestor ((t (:background ,azenburn-bg+2))))
    `(ediff-odd-diff-B ((t (:background ,azenburn-bg+2))))
    `(ediff-odd-diff-C ((t (:background ,azenburn-bg+2))))
+
+;;; eros
+   `(eros-result-overlay-face ((t (:background unspecified))))
 
 ;;; ert
    `(ert-test-result-expected ((t (:foreground ,azenburn-violet+4 :background ,azenburn-bg))))
@@ -488,27 +525,27 @@
    `(git-rebase-hash ((t (:foreground ,azenburn-light-blue))))
 
 ;;; gnus
-   '(gnus-group-mail-1 ((t (:bold t :inherit gnus-group-mail-1-empty))))
+   '(gnus-group-mail-1 ((t (:weigth bold :inherit gnus-group-mail-1-empty))))
    '(gnus-group-mail-1-empty ((t (:inherit gnus-group-news-1-empty))))
-   '(gnus-group-mail-2 ((t (:bold t :inherit gnus-group-mail-2-empty))))
+   '(gnus-group-mail-2 ((t (:weigth bold :inherit gnus-group-mail-2-empty))))
    '(gnus-group-mail-2-empty ((t (:inherit gnus-group-news-2-empty))))
-   '(gnus-group-mail-3 ((t (:bold t :inherit gnus-group-mail-3-empty))))
+   '(gnus-group-mail-3 ((t (:weigth bold :inherit gnus-group-mail-3-empty))))
    '(gnus-group-mail-3-empty ((t (:inherit gnus-group-news-3-empty))))
-   '(gnus-group-mail-4 ((t (:bold t :inherit gnus-group-mail-4-empty))))
+   '(gnus-group-mail-4 ((t (:weigth bold :inherit gnus-group-mail-4-empty))))
    '(gnus-group-mail-4-empty ((t (:inherit gnus-group-news-4-empty))))
-   '(gnus-group-mail-5 ((t (:bold t :inherit gnus-group-mail-5-empty))))
+   '(gnus-group-mail-5 ((t (:weigth bold :inherit gnus-group-mail-5-empty))))
    '(gnus-group-mail-5-empty ((t (:inherit gnus-group-news-5-empty))))
-   '(gnus-group-mail-6 ((t (:bold t :inherit gnus-group-mail-6-empty))))
+   '(gnus-group-mail-6 ((t (:weigth bold :inherit gnus-group-mail-6-empty))))
    '(gnus-group-mail-6-empty ((t (:inherit gnus-group-news-6-empty))))
-   '(gnus-group-mail-low ((t (:bold t :inherit gnus-group-mail-low-empty))))
+   '(gnus-group-mail-low ((t (:weigth bold :inherit gnus-group-mail-low-empty))))
    '(gnus-group-mail-low-empty ((t (:inherit gnus-group-news-low-empty))))
-   '(gnus-group-news-1 ((t (:bold t :inherit gnus-group-news-1-empty))))
-   '(gnus-group-news-2 ((t (:bold t :inherit gnus-group-news-2-empty))))
-   '(gnus-group-news-3 ((t (:bold t :inherit gnus-group-news-3-empty))))
-   '(gnus-group-news-4 ((t (:bold t :inherit gnus-group-news-4-empty))))
-   '(gnus-group-news-5 ((t (:bold t :inherit gnus-group-news-5-empty))))
-   '(gnus-group-news-6 ((t (:bold t :inherit gnus-group-news-6-empty))))
-   '(gnus-group-news-low ((t (:bold t :inherit gnus-group-news-low-empty))))
+   '(gnus-group-news-1 ((t (:weigth bold :inherit gnus-group-news-1-empty))))
+   '(gnus-group-news-2 ((t (:weigth bold :inherit gnus-group-news-2-empty))))
+   '(gnus-group-news-3 ((t (:weigth bold :inherit gnus-group-news-3-empty))))
+   '(gnus-group-news-4 ((t (:weigth bold :inherit gnus-group-news-4-empty))))
+   '(gnus-group-news-5 ((t (:weigth bold :inherit gnus-group-news-5-empty))))
+   '(gnus-group-news-6 ((t (:weigth bold :inherit gnus-group-news-6-empty))))
+   '(gnus-group-news-low ((t (:weigth bold :inherit gnus-group-news-low-empty))))
    '(gnus-header-content ((t (:inherit message-header-other))))
    '(gnus-header-from ((t (:inherit message-header-to))))
    '(gnus-header-name ((t (:inherit message-header-name))))
@@ -626,6 +663,35 @@
    `(hydra-face-pink ((t (:foreground ,azenburn-green :background ,azenburn-bg))))
    `(hydra-face-teal ((t (:foreground ,azenburn-bordeaux :background ,azenburn-bg))))
 
+;;; info+
+   `(info-command-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue))))
+   `(info-constant-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-green))))
+   `(info-double-quoted-name ((t (:inherit font-lock-comment-face))))
+   `(info-file ((t (:background ,azenburn-bg-1 :foreground ,azenburn-dark-blue))))
+   `(info-function-ref-item ((t (:background ,azenburn-bg-1 :inherit font-lock-function-name-face))))
+   `(info-macro-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-dark-blue))))
+   `(info-menu ((t (:foreground ,azenburn-dark-blue))))
+   `(info-quoted-name ((t (:inherit font-lock-constant-face))))
+   `(info-reference-item ((t (:background ,azenburn-bg-1))))
+   `(info-single-quote ((t (:inherit font-lock-keyword-face))))
+   `(info-special-form-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-dark-blue))))
+   `(info-string ((t (:inherit font-lock-string-face))))
+   `(info-syntax-class-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-beige+1))))
+   `(info-user-option-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-blue))))
+   `(info-variable-ref-item ((t (:background ,azenburn-bg-1 :foreground ,azenburn-light-blue))))
+
+;;; irfc
+   `(irfc-head-name-face ((t (:foreground ,azenburn-blue :weight bold))))
+   `(irfc-head-number-face ((t (:foreground ,azenburn-blue :weight bold))))
+   `(irfc-reference-face ((t (:foreground ,azenburn-beige-1 :weight bold))))
+   `(irfc-requirement-keyword-face ((t (:inherit font-lock-keyword-face))))
+   `(irfc-rfc-link-face ((t (:inherit link))))
+   `(irfc-rfc-number-face ((t (:foreground ,azenburn-bordeaux :weight bold))))
+   `(irfc-std-number-face ((t (:foreground ,azenburn-violet+4 :weight bold))))
+   `(irfc-table-item-face ((t (:foreground ,azenburn-violet+3))))
+   `(irfc-title-face ((t (:foreground ,azenburn-dark-blue
+                                      :underline t :weight bold))))
+
 ;;; ivy
    `(ivy-confirm-face ((t (:foreground ,azenburn-violet :background ,azenburn-bg))))
    `(ivy-match-required-face ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
@@ -684,9 +750,13 @@
 ;;; ledger-mode
    `(ledger-font-payee-uncleared-face ((t (:foreground ,azenburn-blue-1 :weight bold))))
    `(ledger-font-payee-cleared-face ((t (:foreground ,azenburn-fg :weight normal))))
+   `(ledger-font-payee-pending-face ((t (:foreground ,azenburn-blue :weight normal))))
    `(ledger-font-xact-highlight-face ((t (:background ,azenburn-bg+1))))
+   `(ledger-font-auto-xact-face ((t (:foreground ,azenburn-dark-blue-1 :weight normal))))
+   `(ledger-font-periodic-xact-face ((t (:foreground ,azenburn-violet :weight normal))))
    `(ledger-font-pending-face ((t (:foreground ,azenburn-light-blue weight: normal))))
    `(ledger-font-other-face ((t (:foreground ,azenburn-fg))))
+   `(ledger-font-posting-date-face ((t (:foreground ,azenburn-light-blue :weight normal))))
    `(ledger-font-posting-account-face ((t (:foreground ,azenburn-beige-1))))
    `(ledger-font-posting-account-cleared-face ((t (:foreground ,azenburn-fg))))
    `(ledger-font-posting-account-pending-face ((t (:foreground ,azenburn-light-blue))))
@@ -875,7 +945,11 @@
    `(mingus-pausing-face ((t (:foreground ,azenburn-green))))
    `(mingus-playing-face ((t (:foreground ,azenburn-bordeaux))))
    `(mingus-playlist-face ((t (:foreground ,azenburn-bordeaux ))))
+   `(mingus-mark-face ((t (:bold t :foreground ,azenburn-green))))
    `(mingus-song-file-face ((t (:foreground ,azenburn-dark-blue))))
+   `(mingus-artist-face ((t (:foreground ,azenburn-bordeaux))))
+   `(mingus-album-face ((t (:underline t :foreground ,azenburn-blue+1))))
+   `(mingus-album-stale-face ((t (:foreground ,azenburn-blue+1))))
    `(mingus-stopped-face ((t (:foreground ,azenburn-blue))))
 
 ;;; nav
@@ -904,6 +978,24 @@
    `(mumamo-background-chunk-submode3 ((t (:background ,azenburn-bg+3))))
    `(mumamo-background-chunk-submode4 ((t (:background ,azenburn-bg+1))))
 
+;;; neotree
+   `(neo-banner-face ((t (:foreground ,azenburn-beige+1 :weight bold))))
+   `(neo-header-face ((t (:foreground ,azenburn-fg))))
+   `(neo-root-dir-face ((t (:foreground ,azenburn-beige+1 :weight bold))))
+   `(neo-dir-link-face ((t (:foreground ,azenburn-beige))))
+   `(neo-file-link-face ((t (:foreground ,azenburn-fg))))
+   `(neo-expand-btn-face ((t (:foreground ,azenburn-beige))))
+   `(neo-vc-default-face ((t (:foreground ,azenburn-fg+1))))
+   `(neo-vc-user-face ((t (:foreground ,azenburn-blue :slant italic))))
+   `(neo-vc-up-to-date-face ((t (:foreground ,azenburn-fg))))
+   `(neo-vc-edited-face ((t (:foreground ,azenburn-green))))
+   `(neo-vc-needs-merge-face ((t (:foreground ,azenburn-blue+1))))
+   `(neo-vc-unlocked-changes-face ((t (:foreground ,azenburn-blue :background ,azenburn-beige-5))))
+   `(neo-vc-added-face ((t (:foreground ,azenburn-violet+1))))
+   `(neo-vc-conflict-face ((t (:foreground ,azenburn-blue+1))))
+   `(neo-vc-missing-face ((t (:foreground ,azenburn-blue+1))))
+   `(neo-vc-ignored-face ((t (:foreground ,azenburn-fg-1))))
+
 ;;; org-mode
    `(org-agenda-date-today
      ((t (:foreground ,azenburn-fg+1 :slant italic :weight bold))) t)
@@ -914,7 +1006,7 @@
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,azenburn-beige :underline t))))
    `(org-deadline-announce ((t (:foreground ,azenburn-blue-1))))
-   `(org-done ((t (:bold t :weight bold :foreground ,azenburn-violet+3))))
+   `(org-done ((t (:weigth bold :weight bold :foreground ,azenburn-violet+3))))
    `(org-formula ((t (:foreground ,azenburn-dark-blue-2))))
    `(org-headline-done ((t (:foreground ,azenburn-violet+3))))
    `(org-hide ((t (:foreground ,azenburn-bg-1))))
@@ -933,11 +1025,11 @@
    `(org-special-keyword ((t (:inherit font-lock-comment-face))))
    `(org-sexp-date ((t (:foreground ,azenburn-beige+1 :underline t))))
    `(org-table ((t (:foreground ,azenburn-violet+2))))
-   `(org-tag ((t (:bold t :weight bold))))
+   `(org-tag ((t (:weigth bold :weight bold))))
    `(org-time-grid ((t (:foreground ,azenburn-light-blue))))
-   `(org-todo ((t (:bold t :foreground ,azenburn-blue :weight bold))))
+   `(org-todo ((t (:weigth bold :foreground ,azenburn-blue :weight bold))))
    `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
-   `(org-warning ((t (:bold t :foreground ,azenburn-blue :weight bold :underline nil))))
+   `(org-warning ((t (:weigth bold :foreground ,azenburn-blue :weight bold :underline nil))))
    `(org-column ((t (:background ,azenburn-bg-1))))
    `(org-column-title ((t (:background ,azenburn-bg-1 :underline t :weight bold))))
    `(org-mode-line-clock ((t (:foreground ,azenburn-fg :background ,azenburn-bg-1))))
@@ -1031,12 +1123,21 @@
    `(rcirc-server-prefix ((t (:foreground ,azenburn-violet+1))))
    `(rcirc-timestamp ((t (:foreground ,azenburn-violet+2))))
    `(rcirc-nick-in-message ((t (:foreground ,azenburn-dark-blue))))
-   '(rcirc-nick-in-message-full-line ((t (:bold t))))
-   `(rcirc-prompt ((t (:foreground ,azenburn-dark-blue :bold t))))
+   '(rcirc-nick-in-message-full-line ((t (:weigth bold))))
+   `(rcirc-prompt ((t (:foreground ,azenburn-dark-blue :weigth bold))))
    '(rcirc-track-nick ((t (:inverse-video t))))
-   '(rcirc-track-keyword ((t (:bold t))))
-   '(rcirc-url ((t (:bold t))))
-   `(rcirc-keyword ((t (:foreground ,azenburn-dark-blue :bold t))))
+   '(rcirc-track-keyword ((t (:weigth bold))))
+   '(rcirc-url ((t (:weigth bold))))
+   `(rcirc-keyword ((t (:foreground ,azenburn-dark-blue :weigth bold))))
+
+;;; re-builder
+   `(reb-match-0 ((t (:foreground ,azenburn-bg :background ,azenburn-green))))
+   `(reb-match-1 ((t (:foreground ,azenburn-bg :background ,azenburn-beige))))
+   `(reb-match-2 ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue))))
+   `(reb-match-3 ((t (:foreground ,azenburn-bg :background ,azenburn-blue))))
+
+;;; regex-tool
+   `(regex-tool-matched-face ((t (:background ,azenburn-beige-4 :weight bold))))
 
 ;;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,azenburn-violet))))
@@ -1058,7 +1159,7 @@
    `(rst-level-6-face ((t (:foreground ,azenburn-violet-1))))
 
 ;;; sh-mode
-   `(sh-heredoc     ((t (:foreground ,azenburn-dark-blue :bold t))))
+   `(sh-heredoc     ((t (:foreground ,azenburn-dark-blue :weigth bold))))
    `(sh-quoted-exec ((t (:foreground ,azenburn-blue))))
 
 ;;; show-paren
@@ -1158,6 +1259,14 @@
    `(undo-tree-visualizer-default-face ((t (:foreground ,azenburn-fg))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,azenburn-dark-blue))))
    `(undo-tree-visualizer-unmodified-face ((t (:foreground ,azenburn-bordeaux))))
+
+;;; visual-regexp
+   `(vr/group-0 ((t (:foreground ,azenburn-bg :background ,azenburn-violet :weight bold))))
+   `(vr/group-1 ((t (:foreground ,azenburn-bg :background ,azenburn-light-blue :weight bold))))
+   `(vr/group-2 ((t (:foreground ,azenburn-bg :background ,azenburn-beige :weight bold))))
+   `(vr/match-0 ((t (:inherit isearch))))
+   `(vr/match-1 ((t (:foreground ,azenburn-dark-blue-2 :background ,azenburn-bg-1 :weight bold))))
+   `(vr/match-separator-face ((t (:foreground ,azenburn-blue :weight bold))))
 
 ;;; volatile-highlights
    `(vhl/default-face ((t (:background ,azenburn-bg-05))))
