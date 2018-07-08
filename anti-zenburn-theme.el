@@ -40,23 +40,32 @@
       (azenburn-bg+1 "#b0b0b0")
       (azenburn-bg+2 "#a0a0a0")
       (azenburn-bg+3 "#909090")
+      (azenburn-blue+2 "#134c4c")
       (azenburn-blue+1 "#235c5c")
       (azenburn-blue "#336c6c")
       (azenburn-blue-1 "#437c7c")
       (azenburn-blue-2 "#538c8c")
       (azenburn-blue-3 "#639c9c")
       (azenburn-blue-4 "#73acac")
+      (azenburn-blue-5 "#83bcbc")
+      (azenburn-blue-6 "#93cccc")
       (azenburn-light-blue "#205070")
       (azenburn-dark-blue "#0f2050")
       (azenburn-dark-blue-1 "#1f3060")
       (azenburn-dark-blue-2 "#2f4070")
-      (azenburn-violet-1 "#a080a0")
+      (azenburn-violet-5 "#d0b0d0")
+      (azenburn-violet-4 "#c0a0c0")
+      (azenburn-violet-3 "#b090b0")
+      (azenburn-violet-2 "#a080a0")
+      (azenburn-violet-1 "#907090")
       (azenburn-violet "#806080")
       (azenburn-violet+1 "#704d70")
       (azenburn-violet+2 "#603a60")
       (azenburn-violet+3 "#502750")
       (azenburn-violet+4 "#401440")
       (azenburn-bordeaux "#6c1f1c")
+      (azenburn-beige+3 "#421f0c")
+      (azenburn-beige+2 "#531f1c")
       (azenburn-beige+1 "#6b400c")
       (azenburn-beige "#732f2c")
       (azenburn-beige-1 "#834744")
@@ -75,6 +84,7 @@
    `(default ((t (:foreground ,azenburn-fg :background ,azenburn-bg))))
    `(cursor ((t (:foreground ,azenburn-fg :background ,azenburn-fg+1))))
    `(escape-glyph ((t (:foreground ,azenburn-dark-blue :weight bold))))
+   `(widget-field ((t (:foreground ,azenburn-fg :background ,azenburn-bg+3))))
    `(fringe ((t (:foreground ,azenburn-fg :background ,azenburn-bg+1))))
    `(header-line ((t (:foreground ,azenburn-dark-blue
                                   :background ,azenburn-bg-1
@@ -140,7 +150,7 @@
       (t (:inverse-video t))))
    `(mode-line-buffer-id ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(mode-line-inactive
-     ((t (:foreground ,azenburn-violet-1
+     ((t (:foreground ,azenburn-violet-2
                       :background ,azenburn-bg-05
                       :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,azenburn-bg-1))
@@ -152,7 +162,7 @@
    ;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,azenburn-fg :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,azenburn-violet))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,azenburn-violet-1))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,azenburn-violet-2))))
    `(font-lock-constant-face ((t (:foreground ,azenburn-violet+4))))
    `(font-lock-doc-face ((t (:foreground ,azenburn-violet+2))))
    `(font-lock-function-name-face ((t (:foreground ,azenburn-bordeaux))))
@@ -279,8 +289,8 @@
 ;;; bm
    `(bm-face ((t (:background ,azenburn-dark-blue-1 :foreground ,azenburn-bg))))
    `(bm-fringe-face ((t (:background ,azenburn-dark-blue-1 :foreground ,azenburn-bg))))
-   `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
-   `(bm-persistent-face ((t (:background ,azenburn-violet-1 :foreground ,azenburn-bg))))
+   `(bm-fringe-persistent-face ((t (:background ,azenburn-violet-2 :foreground ,azenburn-bg))))
+   `(bm-persistent-face ((t (:background ,azenburn-violet-2 :foreground ,azenburn-bg))))
 
 ;;; calfw
    `(cfw:face-annotation ((t (:foreground ,azenburn-blue :inherit cfw:face-day-title))))
@@ -311,7 +321,7 @@
    `(cider-traced-face ((t (:box (:color ,azenburn-bordeaux :line-width -1)))))
    `(cider-test-failure-face ((t (:background ,azenburn-blue-4))))
    `(cider-test-error-face ((t (:background ,azenburn-green))))
-   `(cider-test-success-face ((t (:background ,azenburn-violet-1))))
+   `(cider-test-success-face ((t (:background ,azenburn-violet-2))))
    `(cider-fringe-good-face ((t (:foreground ,azenburn-violet+4))))
 
 ;;; circe
@@ -371,12 +381,12 @@
    `(debbugs-gnu-tagged ((t (:foreground ,azenburn-blue))))
 
 ;;; diff
-   `(diff-added          ((t (:background ,azenburn-blue-4 :foreground ,azenburn-fg))))
-   `(diff-changed        ((t (:background ,azenburn-light-blue :foreground ,azenburn-fg))))
-   `(diff-removed        ((t (:background ,azenburn-violet-1 :foreground ,azenburn-fg))))
-   `(diff-refine-added   ((t (:background ,azenburn-green :foreground ,azenburn-fg-1))))
-   `(diff-refine-change  ((t (:background ,azenburn-dark-blue-2 :foreground ,azenburn-fg-1))))
-   `(diff-refine-removed ((t (:background ,azenburn-violet+2 :foreground ,azenburn-fg-1))))
+   `(diff-added          ((t (:background ,azenburn-violet-5 :foreground ,azenburn-violet+2))))
+   `(diff-changed        ((t (:background "#aaaaee" :foreground ,azenburn-dark-blue-1))))
+   `(diff-removed        ((t (:background ,azenburn-blue-6 :foreground ,azenburn-blue+1))))
+   `(diff-refine-added   ((t (:background ,azenburn-violet-4 :foreground ,azenburn-violet+3))))
+   `(diff-refine-changed  ((t (:background "#7777ee" :foreground ,azenburn-dark-blue))))
+   `(diff-refine-removed ((t (:background ,azenburn-blue-5 :foreground ,azenburn-blue+2))))
    `(diff-header ((,class (:background ,azenburn-bg+2))
                   (t (:background ,azenburn-fg :foreground ,azenburn-bg))))
    `(diff-file-header
@@ -386,7 +396,7 @@
 ;;; diff-hl
    `(diff-hl-change ((,class (:foreground ,azenburn-beige :background ,azenburn-beige-2))))
    `(diff-hl-delete ((,class (:foreground ,azenburn-blue+1 :background ,azenburn-blue-1))))
-   `(diff-hl-insert ((,class :foreground ,azenburn-violet+1 :background ,azenburn-violet-1)))
+   `(diff-hl-insert ((,class :foreground ,azenburn-violet+1 :background ,azenburn-violet-2)))
 
 ;;; dim-autoload
    `(dim-autoload-cookie-line ((t (:foreground ,azenburn-bg+1))))
@@ -413,7 +423,7 @@
    `(diredp-number ((t (:foreground ,azenburn-violet+1))))
    `(diredp-other-priv ((t (:foreground ,azenburn-dark-blue-1))))
    `(diredp-rare-priv ((t (:foreground ,azenburn-blue-1))))
-   `(diredp-read-priv ((t (:foreground ,azenburn-violet-1))))
+   `(diredp-read-priv ((t (:foreground ,azenburn-violet-2))))
    `(diredp-symlink ((t (:foreground ,azenburn-dark-blue))))
    `(diredp-write-priv ((t (:foreground ,azenburn-green))))
 
@@ -422,23 +432,46 @@
    `(dired-async-message ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(dired-async-mode-message ((t (:foreground ,azenburn-dark-blue))))
 
+;;; diredfl
+   `(diredfl-compressed-file-suffix ((t (:foreground ,azenburn-light-blue))))
+   `(diredfl-date-time ((t (:foreground ,azenburn-green))))
+   `(diredfl-deletion ((t (:foreground ,azenburn-dark-blue))))
+   `(diredfl-deletion-file-name ((t (:foreground ,azenburn-blue))))
+   `(diredfl-dir-heading ((t (:foreground ,azenburn-beige :background ,azenburn-bg-1))))
+   `(diredfl-dir-priv ((t (:foreground ,azenburn-bordeaux))))
+   `(diredfl-exec-priv ((t (:foreground ,azenburn-blue))))
+   `(diredfl-executable-tag ((t (:foreground ,azenburn-violet+1))))
+   `(diredfl-file-name ((t (:foreground ,azenburn-beige))))
+   `(diredfl-file-suffix ((t (:foreground ,azenburn-violet))))
+   `(diredfl-flag-mark ((t (:foreground ,azenburn-dark-blue))))
+   `(diredfl-flag-mark-line ((t (:foreground ,azenburn-light-blue))))
+   `(diredfl-ignored-file-name ((t (:foreground ,azenburn-blue))))
+   `(diredfl-link-priv ((t (:foreground ,azenburn-dark-blue))))
+   `(diredfl-no-priv ((t (:foreground ,azenburn-fg))))
+   `(diredfl-number ((t (:foreground ,azenburn-violet+1))))
+   `(diredfl-other-priv ((t (:foreground ,azenburn-dark-blue-1))))
+   `(diredfl-rare-priv ((t (:foreground ,azenburn-blue-1))))
+   `(diredfl-read-priv ((t (:foreground ,azenburn-violet-1))))
+   `(diredfl-symlink ((t (:foreground ,azenburn-dark-blue))))
+   `(diredfl-write-priv ((t (:foreground ,azenburn-green))))
+
 ;;; ediff
-   `(ediff-current-diff-A ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
-   `(ediff-current-diff-Ancestor ((t (:foreground ,azenburn-fg :background ,azenburn-blue-4))))
-   `(ediff-current-diff-B ((t (:foreground ,azenburn-fg :background ,azenburn-violet-1))))
-   `(ediff-current-diff-C ((t (:foreground ,azenburn-fg :background ,azenburn-beige-5))))
+   '(ediff-current-diff-A ((t (:inherit diff-removed))))
+   '(ediff-current-diff-Ancestor ((t (:inherit ediff-current-diff-A))))
+   '(ediff-current-diff-B ((t (:inherit diff-added))))
+   `(ediff-current-diff-C ((t (:foreground ,azenburn-beige+2 :background ,azenburn-beige-5))))
    `(ediff-even-diff-A ((t (:background ,azenburn-bg+1))))
    `(ediff-even-diff-Ancestor ((t (:background ,azenburn-bg+1))))
    `(ediff-even-diff-B ((t (:background ,azenburn-bg+1))))
    `(ediff-even-diff-C ((t (:background ,azenburn-bg+1))))
-   `(ediff-fine-diff-A ((t (:foreground ,azenburn-fg :background ,azenburn-blue-2 :weight bold))))
-   `(ediff-fine-diff-Ancestor ((t (:foreground ,azenburn-fg :background ,azenburn-blue-2 weight bold))))
-   `(ediff-fine-diff-B ((t (:foreground ,azenburn-fg :background ,azenburn-violet :weight bold))))
-   `(ediff-fine-diff-C ((t (:foreground ,azenburn-fg :background ,azenburn-beige-3 :weight bold ))))
-   `(ediff-odd-diff-A ((t (:background ,azenburn-bg+2))))
-   `(ediff-odd-diff-Ancestor ((t (:background ,azenburn-bg+2))))
-   `(ediff-odd-diff-B ((t (:background ,azenburn-bg+2))))
-   `(ediff-odd-diff-C ((t (:background ,azenburn-bg+2))))
+   '(ediff-fine-diff-A ((t (:inherit diff-refine-removed :weight bold))))
+   '(ediff-fine-diff-Ancestor ((t (:inherit ediff-fine-diff-A))))
+   '(ediff-fine-diff-B ((t (:inherit diff-refine-added :weight bold))))
+   `(ediff-fine-diff-C ((t (:foreground ,azenburn-beige+3 :background ,azenburn-beige-4 :weight bold ))))
+   '(ediff-odd-diff-A ((t (:background ,azenburn-bg+2))))
+   '(ediff-odd-diff-Ancestor ((t (:inherit ediff-odd-diff-A))))
+   '(ediff-odd-diff-B ((t (:inherit ediff-odd-diff-A))))
+   '(ediff-odd-diff-C ((t (:inherit ediff-odd-diff-A))))
 
 ;;; eros
    `(eros-result-overlay-face ((t (:background unspecified))))
@@ -495,7 +528,7 @@
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,azenburn-violet)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,azenburn-violet-1 :weight bold :underline t))))
+      (t (:foreground ,azenburn-violet-2 :weight bold :underline t))))
 
 ;;; flyspell
    `(flyspell-duplicate
@@ -735,7 +768,7 @@
    `(ivy-cursor ((t (:foreground ,azenburn-bg :background ,azenburn-fg))))
    `(ivy-match-required-face ((t (:foreground ,azenburn-blue :background ,azenburn-bg))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,azenburn-bg+1))))
-   `(ivy-minibuffer-match-face-2 ((t (:background ,azenburn-violet-1))))
+   `(ivy-minibuffer-match-face-2 ((t (:background ,azenburn-violet-2))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,azenburn-violet))))
    `(ivy-minibuffer-match-face-4 ((t (:background ,azenburn-violet+1))))
    `(ivy-remote ((t (:foreground ,azenburn-beige :background ,azenburn-bg))))
@@ -753,12 +786,12 @@
 ;;; js2-mode
    `(js2-warning ((t (:underline ,azenburn-light-blue))))
    `(js2-error ((t (:foreground ,azenburn-blue :weight bold))))
-   `(js2-jsdoc-tag ((t (:foreground ,azenburn-violet-1))))
+   `(js2-jsdoc-tag ((t (:foreground ,azenburn-violet-2))))
    `(js2-jsdoc-type ((t (:foreground ,azenburn-violet+2))))
    `(js2-jsdoc-value ((t (:foreground ,azenburn-violet+3))))
    `(js2-function-param ((t (:foreground ,azenburn-light-blue))))
    `(js2-external-variable ((t (:foreground ,azenburn-light-blue))))
-   `(js2-instance-member ((t (:foreground ,azenburn-violet-1))))
+   `(js2-instance-member ((t (:foreground ,azenburn-violet-2))))
    `(js2-jsdoc-html-tag-delimiter ((t (:foreground ,azenburn-light-blue))))
    `(js2-jsdoc-html-tag-name ((t (:foreground ,azenburn-blue-1))))
    `(js2-object-property ((t (:foreground ,azenburn-beige+1))))
@@ -848,10 +881,12 @@
    `(magit-section-highlight           ((t (:background ,azenburn-bg+05))))
    `(magit-section-heading             ((t (:foreground ,azenburn-dark-blue :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,azenburn-light-blue :weight bold))))
-   `(magit-diff-added-highlight ((t (:background ,azenburn-violet))))
-   `(magit-diff-removed-highlight ((t (:background ,azenburn-blue-3))))
-   `(magit-diff-added ((t (:background ,azenburn-violet-1))))
-   `(magit-diff-removed ((t (:background ,azenburn-blue-4))))
+
+   '(magit-diff-added ((t (:inherit diff-added))))
+   '(magit-diff-added-highlight ((t (:inherit diff-refine-added))))
+   '(magit-diff-removed ((t (:inherit diff-removed))))
+   '(magit-diff-removed-highlight ((t (:inherit diff-refine-removed))))
+
    '(magit-diff-file-heading           ((t (:weight bold))))
    `(magit-diff-file-heading-highlight ((t (:background ,azenburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,azenburn-bg+05
@@ -868,7 +903,7 @@
    `(magit-diffstat-removed ((t (:foreground ,azenburn-blue))))
 ;;; popup
    `(magit-popup-heading             ((t (:foreground ,azenburn-dark-blue  :weight bold))))
-   `(magit-popup-key                 ((t (:foreground ,azenburn-violet-1 :weight bold))))
+   `(magit-popup-key                 ((t (:foreground ,azenburn-violet-2 :weight bold))))
    `(magit-popup-argument            ((t (:foreground ,azenburn-violet   :weight bold))))
    `(magit-popup-disabled-argument   ((t (:foreground ,azenburn-fg-1    :weight normal))))
    `(magit-popup-option-value        ((t (:foreground ,azenburn-beige-2  :weight bold))))
@@ -1022,7 +1057,7 @@
    `(mu4e-cited-3-face ((t (:foreground ,azenburn-beige-2  :slant italic))))
    `(mu4e-cited-4-face ((t (:foreground ,azenburn-violet   :slant italic))))
    `(mu4e-cited-5-face ((t (:foreground ,azenburn-beige-4  :slant italic))))
-   `(mu4e-cited-6-face ((t (:foreground ,azenburn-violet-1 :slant italic))))
+   `(mu4e-cited-6-face ((t (:foreground ,azenburn-violet-2 :slant italic))))
    `(mu4e-cited-7-face ((t (:foreground ,azenburn-beige    :slant italic))))
    `(mu4e-replied-face ((t (:foreground ,azenburn-bg+3))))
    `(mu4e-trashed-face ((t (:foreground ,azenburn-bg+3 :strike-through t))))
@@ -1099,7 +1134,7 @@
    `(org-habit-clear-face ((t :background ,azenburn-beige-3)))
    `(org-habit-overdue-face ((t :background ,azenburn-blue-3)))
    `(org-habit-clear-future-face ((t :background ,azenburn-beige-4)))
-   `(org-habit-ready-future-face ((t :background ,azenburn-violet-1)))
+   `(org-habit-ready-future-face ((t :background ,azenburn-violet-2)))
    `(org-habit-alert-future-face ((t :background ,azenburn-dark-blue-2 :foreground ,azenburn-bg)))
    `(org-habit-overdue-future-face ((t :background ,azenburn-blue-4)))
 
@@ -1228,7 +1263,7 @@
    `(rst-level-3-face ((t (:foreground ,azenburn-beige-1))))
    `(rst-level-4-face ((t (:foreground ,azenburn-dark-blue-2))))
    `(rst-level-5-face ((t (:foreground ,azenburn-bordeaux))))
-   `(rst-level-6-face ((t (:foreground ,azenburn-violet-1))))
+   `(rst-level-6-face ((t (:foreground ,azenburn-violet-2))))
 
 ;;; sh-mode
    `(sh-heredoc     ((t (:foreground ,azenburn-dark-blue :weight bold))))
@@ -1498,7 +1533,7 @@
        ( 80. . ,azenburn-dark-blue-2)
        (100. . ,azenburn-dark-blue-1)
        (120. . ,azenburn-dark-blue)
-       (140. . ,azenburn-violet-1)
+       (140. . ,azenburn-violet-2)
        (160. . ,azenburn-violet)
        (180. . ,azenburn-violet+1)
        (200. . ,azenburn-violet+2)
