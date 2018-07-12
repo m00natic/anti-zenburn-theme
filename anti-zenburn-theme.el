@@ -468,7 +468,7 @@
    '(ediff-fine-diff-Ancestor ((t (:inherit ediff-fine-diff-A))))
    '(ediff-fine-diff-B ((t (:inherit diff-refine-added :weight bold))))
    `(ediff-fine-diff-C ((t (:foreground ,azenburn-beige+3 :background ,azenburn-beige-4 :weight bold ))))
-   '(ediff-odd-diff-A ((t (:background ,azenburn-bg+2))))
+   `(ediff-odd-diff-A ((t (:background ,azenburn-bg+2))))
    '(ediff-odd-diff-Ancestor ((t (:inherit ediff-odd-diff-A))))
    '(ediff-odd-diff-B ((t (:inherit ediff-odd-diff-A))))
    '(ediff-odd-diff-C ((t (:inherit ediff-odd-diff-A))))
